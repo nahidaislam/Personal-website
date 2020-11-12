@@ -1,11 +1,12 @@
+//CSS
+import "./ProjectTemp.css"
+
 import React, { useRef, useEffect } from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { TimelineLite, TweenMax, Power3 } from "gsap"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
-
-//Bootstrap
 import { Container, Row, Col } from "react-bootstrap"
 
 //Components
@@ -16,8 +17,6 @@ import Cero from "../components/Projects/Cero/Cero"
 import Disasteroid from "../components/Projects/Disasteroid/Disasteroid"
 
 import Layout from "../components/layout.js"
-
-import "./ProjectTemp.css"
 
 const ProjectTemp = ({ data }) => {
   const shortcodes = {

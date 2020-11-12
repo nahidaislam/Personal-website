@@ -1,10 +1,8 @@
-import React from "react"
-
-//Icon
-import { FaGithub, FaLinkedinIn, FaBehance, FaInstagram } from "react-icons/fa"
-
 //CSS
 import "./Socials.css"
+
+import React from "react"
+import { FaBehance, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 
 const Socials = () => {
   return (

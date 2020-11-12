@@ -1,15 +1,14 @@
-import React, { useRef, useEffect } from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import { TweenMax, Power3 } from "gsap"
+//CSS
+import "./Hobbies.css"
 
-import { Container, Col, Row } from "react-bootstrap"
+import React, { useEffect, useRef } from "react"
+import { Col, Container, Row } from "react-bootstrap"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+import { Power3, TweenMax } from "gsap"
 
 //Components
 import PageTitle from "../Elements/PageTitle/PageTitle"
-
-//CSS
-import "./Hobbies.css"
 
 const Hobbies = () => {
   const data = useStaticQuery(graphql`

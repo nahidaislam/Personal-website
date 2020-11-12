@@ -1,16 +1,14 @@
-import React, { useRef, useEffect } from "react"
-import { Link } from "gatsby"
-// import Img from "gatsby-image"
-import { TimelineLite, TweenMax, Power3 } from "gsap"
-
-import { Container, Col, Row } from "react-bootstrap"
-
-// import Images from '../image'
-//Import css
+//CSS
 import "./Home.css"
 
-import ring from "../../images/ring.png"
+import React, { useEffect, useRef } from "react"
+import { Col, Container, Row } from "react-bootstrap"
+import { Link } from "gatsby"
+import { Power3, TimelineLite, TweenMax } from "gsap"
+
+//Images
 import illustration from "../../images/ProfilePicture/illustration.png"
+import ring from "../../images/ring.png"
 
 const Home = () => {
   // const { illustration } = Images()

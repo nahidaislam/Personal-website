@@ -1,9 +1,9 @@
 import React from "react"
-// import { Link } from "gatsby"
 
+//Components
+import Hobbies from "../components/Hobbies/Hobbies"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hobbies from "../components/Hobbies/Hobbies"
 
 const HobbiesPage = () => (
   <Layout>

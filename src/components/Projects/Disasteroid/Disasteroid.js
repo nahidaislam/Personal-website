@@ -1,17 +1,23 @@
-import React from "react"
+import { Carousel, Col, Row } from "react-bootstrap"
+import { graphql, useStaticQuery } from "gatsby"
+
+import Button from "../../Elements/Button/Button"
 import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react"
+import Subhead from "../../Elements/Subhead/Subhead"
+import Tool from "../../Elements/Tool/Tool"
+import ToolImage from "../../toolImage"
 
 //Bootstrap
-import { Row, Col, Carousel } from "react-bootstrap"
+
 
 //Components
-import Button from "../../Elements/Button/Button"
-import Tool from "../../Elements/Tool/Tool"
-import Subhead from "../../Elements/Subhead/Subhead"
+
+
+
 
 //Image query
-import ToolImage from "../../toolImage"
+
 
 // CSS
 // import "./cero.css"

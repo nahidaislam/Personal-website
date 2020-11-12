@@ -1,10 +1,9 @@
-import React, { Component } from "react"
-import { Link } from "gatsby"
-
-import { Container, Nav, Navbar } from "react-bootstrap"
-
 //CSS
 import "./Header.css"
+
+import React, { Component } from "react"
+import { Container, Nav, Navbar } from "react-bootstrap"
+import { Link } from "gatsby"
 
 export default class Header extends Component {
   render() {
@@ -25,7 +24,7 @@ export default class Header extends Component {
                 </Nav.Item>
                 <Nav.Item as="li">
                   <Link
-                    to="/projectsPage"
+                    to="/projects"
                     className="nav-link"
                     activeClassName="active"
                   >
@@ -34,7 +33,7 @@ export default class Header extends Component {
                 </Nav.Item>
                 <Nav.Item as="li">
                   <Link
-                    to="/aboutPage"
+                    to="/about"
                     className="nav-link"
                     activeClassName="active"
                   >
@@ -43,7 +42,7 @@ export default class Header extends Component {
                 </Nav.Item>
                 <Nav.Item as="li">
                   <Link
-                    to="/hobbiesPage"
+                    to="/hobbies"
                     className="nav-link"
                     activeClassName="active"
                   >

@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 const ToolImage = () => {
   const toolImageData = useStaticQuery(graphql`

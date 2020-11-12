@@ -1,9 +1,9 @@
-import React from "react"
-
 //CSS
 import "./Contact.css"
 
-const Contact = props => {
+import React from "react"
+
+const Contact = () => {
   return (
     <div className="contact">
       <p className="email">

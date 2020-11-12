@@ -1,9 +1,8 @@
-import React from "react"
-
-import { Container } from "react-bootstrap"
-
 // CSS
 import "./Subhead.css"
+
+import React from "react"
+import { Container } from "react-bootstrap"
 
 const Subhead = ({ subtitle, imgsrc }) => {
   return (

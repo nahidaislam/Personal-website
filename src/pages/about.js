@@ -1,9 +1,9 @@
 import React from "react"
-// import { Link } from "gatsby"
 
+//Components
+import About from "../components/About/About"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import About from "../components/About/About"
 
 const AboutPage = () => (
   <Layout>

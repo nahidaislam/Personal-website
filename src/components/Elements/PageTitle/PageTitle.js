@@ -1,9 +1,8 @@
-import React from "react"
-
-import { Container } from "react-bootstrap"
-
 // CSS
 import "./PageTitle.css"
+
+import React from "react"
+import { Container } from "react-bootstrap"
 
 const PageTitle = ({ title }) => {
   return (

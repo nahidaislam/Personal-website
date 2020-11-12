@@ -1,7 +1,10 @@
 import React from "react"
 import { Col } from "react-bootstrap"
 
+//Component
 import Card from "./Card"
+
+//Image Query
 import Images from "../image"
 
 const Cards = () => {

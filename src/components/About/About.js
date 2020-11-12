@@ -1,15 +1,16 @@
-import React, { useRef, useEffect } from "react"
-import Img from "gatsby-image"
-import { TimelineLite, TweenMax, Power3 } from "gsap"
-
-import { Container, Col, Row } from "react-bootstrap"
-
-//Components
-import PageTitle from "../Elements/PageTitle/PageTitle"
-import Images from "../image"
-
 //CSS
 import "./About.css"
+
+import React, { useEffect, useRef } from "react"
+import { Col, Container, Row } from "react-bootstrap"
+import { Power3, TimelineLite, TweenMax } from "gsap"
+import Img from "gatsby-image"
+
+//Image Query
+import Images from "../image"
+
+//Component
+import PageTitle from "../Elements/PageTitle/PageTitle"
 
 const About = () => {
   const { propic } = Images()

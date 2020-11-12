@@ -1,20 +1,18 @@
-import React from "react"
-import Img from "gatsby-image"
-import { useStaticQuery, graphql } from "gatsby"
+// CSS
+import "./Cero.css"
 
-//Bootstrap
-import { Row, Col, Carousel } from "react-bootstrap"
+import React from "react"
+import { Carousel, Col, Row } from "react-bootstrap"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 //Components
 import Button from "../../Elements/Button/Button"
-import Tool from "../../Elements/Tool/Tool"
 import Subhead from "../../Elements/Subhead/Subhead"
+import Tool from "../../Elements/Tool/Tool"
 
 //Image query
 import ToolImage from "../../toolImage"
-
-// CSS
-import "./Cero.css"
 
 const Cero = () => {
   const { figma } = ToolImage()

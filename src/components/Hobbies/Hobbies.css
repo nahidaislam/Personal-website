@@ -1,0 +1,25 @@
+.hobbies {
+  visibility: hidden;
+}
+.hobbies-content {
+  padding-top: 2rem;
+}
+.hobbies-content a {
+  text-decoration: none;
+  color: var(--active-color);
+}
+.hobbies-content p {
+  font-size: 17px;
+  color: var(--inactive-color);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.image-item {
+  height: 100%;
+  width: auto;
+}
+.image-grid img:hover {
+  transform: scale(1.1);
+  transition: 0.6s all ease !important;
+}

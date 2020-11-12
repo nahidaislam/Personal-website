@@ -1,9 +1,9 @@
+//CSS
+import "./Card.css"
+
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-
-//CSS
-import "./Card.css"
 
 const Card = ({ link, imgsrc, alt, title, description }) => {
   return (

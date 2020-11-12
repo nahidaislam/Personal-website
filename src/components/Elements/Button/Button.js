@@ -1,9 +1,8 @@
-import React from "react"
-
-import { Container } from "react-bootstrap"
-
 // CSS
 import "./Button.css"
+
+import React from "react"
+import { Container } from "react-bootstrap"
 
 const Button = ({ href, children }) => {
   return (

@@ -1,16 +1,15 @@
-import React, { useRef, useEffect, useState } from "react"
-import { TweenMax, Power3 } from "gsap"
+//CSS
+import "./Card.css"
+
+import React, { useEffect, useRef, useState } from "react"
+import { Container } from "react-bootstrap"
+import { Power3, TweenMax } from "gsap"
 import Isotope from "isotope-layout"
 import styled from "styled-components"
-
-import { Container } from "react-bootstrap"
 
 //Components
 import Cards from "./Cards"
 import PageTitle from "../Elements/PageTitle/PageTitle"
-
-//CSS
-import "./Card.css"
 
 const DisplayCard = () => {
   //animation vars
