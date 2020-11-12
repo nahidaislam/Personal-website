@@ -69,7 +69,7 @@ const ProjectTemp = ({ data }) => {
           <PageTitle title={data.mdx.frontmatter.title} />
           <div className="project-info py-2">
             <Row md={12} className="align-items-center project-intro bg-full">
-              <Col md={6} ref={el => (image = el)}>
+              {/* <Col md={6} ref={el => (image = el)}>
                 {data.mdx.frontmatter.thumbnailImage && (
                   <Img
                     fluid={
@@ -77,7 +77,7 @@ const ProjectTemp = ({ data }) => {
                     }
                   />
                 )}
-              </Col>
+              </Col> */}
               <Col md={6} className="abstract" ref={el => (abstract = el)}>
                 <h2 className="py-3">{data.mdx.frontmatter.secondTitle}</h2>
                 <p>{data.mdx.frontmatter.abstract}</p>
@@ -127,13 +127,6 @@ export const pageQuery = graphql`
         title
         secondTitle
         type
-        thumbnailImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
