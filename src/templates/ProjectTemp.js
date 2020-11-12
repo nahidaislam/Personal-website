@@ -14,7 +14,9 @@ import PageTitle from "../components/Elements/PageTitle/PageTitle"
 import Button from "../components/Elements/Button/Button"
 
 import Cero from "../components/Projects/Cero/Cero"
+import Djtable from "../components/Projects/Djtable/Djtable"
 import Disasteroid from "../components/Projects/Disasteroid/Disasteroid"
+import Viashare from "../components/Projects/Viashare/Viashare"
 
 import Layout from "../components/layout.js"
 
@@ -22,7 +24,9 @@ const ProjectTemp = ({ data }) => {
   const shortcodes = {
     Button,
     Cero,
+    Djtable,
     Disasteroid,
+    Viashare,
   }
 
   let projectTemp = useRef(null)
@@ -68,7 +72,7 @@ const ProjectTemp = ({ data }) => {
           <PageTitle title={data.mdx.frontmatter.title} />
           <div className="project-info py-2">
             <Row md={12} className="align-items-center project-intro bg-full">
-              <Col md={6} ref={el => (image = el)}>
+              <Col md={6} className="pr-5" ref={el => (image = el)}>
                 {data.mdx.frontmatter.thumbnailImage && (
                   <Img
                     fluid={
@@ -77,7 +81,7 @@ const ProjectTemp = ({ data }) => {
                   />
                 )}
               </Col>
-              <Col md={6} className="abstract" ref={el => (abstract = el)}>
+              <Col md={6} className="abstract pl-5" ref={el => (abstract = el)}>
                 <h2 className="py-3">{data.mdx.frontmatter.secondTitle}</h2>
                 <p>{data.mdx.frontmatter.abstract}</p>
 

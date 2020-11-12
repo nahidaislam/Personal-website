@@ -1,5 +1,5 @@
 // CSS
-import "./Cero.css"
+import "../Projects.css"
 
 import React from "react"
 import { Carousel, Col, Row } from "react-bootstrap"
@@ -53,7 +53,7 @@ const Cero = () => {
   return (
     <div className="cero-template content-container">
       <Row md={12} className="py-3">
-        <Col md={6}>
+        <Col md={6} className="pr-5">
           <h4>The project goal</h4>
           <p>
             Many of today’s technologies lack the essence of usability and UX
@@ -62,7 +62,7 @@ const Cero = () => {
             simulation tool can be improved through usercentered design.
           </p>
         </Col>
-        <Col md={6}>
+        <Col md={6} className="pl-5">
           <h4>The research process</h4>
           <li>Specify the context of the use</li>
           <li>Specify requirements</li>
@@ -70,8 +70,8 @@ const Cero = () => {
           <li>Evaluate the design solution</li>
         </Col>
       </Row>
-      <Row md={12}>
-        <Col md={6}>
+      <Row md={12} className="py-3">
+        <Col md={6} className="pr-5">
           <h4>The CERO simulation tool</h4>
           <p>
             Together with the organizations/companies, CERO organizes workshops
@@ -83,7 +83,7 @@ const Cero = () => {
             to continue working with it internally.
           </p>
         </Col>
-        <Col md={6}>
+        <Col md={6} className="pl-5">
           <h4> The company </h4>
           <p>
             CERO (Climate and Economic Research in Organizations) is a concept
@@ -92,8 +92,8 @@ const Cero = () => {
           </p>
         </Col>
       </Row>
-      <Row md={12}>
-        <Col md={12}>
+      <Row md={12} className="py-3">
+        <Col md={12} className="pr-5">
           <h4>The prototyping tool</h4>
           <Tool alt="figma" imgsrc={figma.childImageSharp.fixed}>
             Figma
@@ -101,21 +101,23 @@ const Cero = () => {
         </Col>
       </Row>
       <Subhead subtitle="The redesigned tool" />
+      <div className="carousel">
+        <Carousel>
+          {data.allFile.edges.map(({ node }) => (
+            <Carousel.Item>
+              <Img
+                key={node.id}
+                fluid={node.childImageSharp.fluid}
+                alt={node.base.split(".")[0]}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
 
-      <Carousel className="py-3 carousel">
-        {data.allFile.edges.map(({ node }) => (
-          <Carousel.Item>
-            <Img
-              key={node.id}
-              fluid={node.childImageSharp.fluid}
-              alt={node.base.split(".")[0]}
-            />
-          </Carousel.Item>
-        ))}
-      </Carousel>
       <Subhead subtitle="Learnings" />
       <Row md={12} className="py-3">
-        <Col md={6}>
+        <Col md={6} className="pr-5">
           <h4>Why user wants it</h4>
           <p>
             It is important to put the weight on figuring out why a user wants
@@ -128,7 +130,7 @@ const Cero = () => {
             wants, which can be considered as a weakness.
           </p>
         </Col>
-        <Col md={6}>
+        <Col md={6} className="pl-5">
           <h4>User does not always know</h4>
           <p>
             The result of the pre-study reveals that the users seldom can
@@ -142,7 +144,7 @@ const Cero = () => {
         </Col>
       </Row>
       <Row md={12} className="py-3">
-        <Col md={6}>
+        <Col md={6} className="pr-5">
           <h4>Limitations</h4>
           <p>
             The master thesis was conducted as the master’s degree project in

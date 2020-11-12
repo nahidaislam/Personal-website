@@ -1,0 +1,15 @@
+.carousel {
+  padding: 1rem 0 1rem 0;
+}
+.carousel-indicators li {
+  background-color: darkgray;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+}
+
+.demo-video {
+  padding: 1rem 0 1rem 0;
+}

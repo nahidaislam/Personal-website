@@ -51,7 +51,7 @@ const Cards = () => {
           imgsrc={viashare.childImageSharp.fluid}
           title="The ViaShare"
           alt="The ViaShare"
-          link="/"
+          link="/projects/viashare"
           description="Design"
         />
       </Col>
@@ -60,7 +60,7 @@ const Cards = () => {
           imgsrc={parkout.childImageSharp.fluid}
           title="Parkout"
           alt="Parkout"
-          link="/"
+          link="/projects/parkout"
           description="Mobile application/ Design"
         />
       </Col>
@@ -69,7 +69,7 @@ const Cards = () => {
           imgsrc={sl.childImageSharp.fluid}
           title="SL: Station Map"
           alt="SL: Station Map"
-          link="/"
+          link="/projects/sl"
           description="Design"
         />
       </Col>
@@ -78,7 +78,7 @@ const Cards = () => {
           imgsrc={saveme.childImageSharp.fluid}
           title="SaveMe!"
           alt="SaveMe!"
-          link="/"
+          link="/projects/saveme"
           description="Web game"
         />
       </Col>
