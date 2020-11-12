@@ -17,7 +17,7 @@ import Disasteroid from "../components/Projects/Disasteroid/Disasteroid"
 
 import Layout from "../components/layout.js"
 
-import "./projectTemp.css"
+import "./ProjectTemp.css"
 
 const ProjectTemp = ({ data }) => {
   const shortcodes = {

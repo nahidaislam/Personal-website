@@ -14,7 +14,7 @@ import Subhead from "../../Elements/Subhead/Subhead"
 import ToolImage from "../../toolImage"
 
 // CSS
-import "./cero.css"
+import "./Cero.css"
 
 const Cero = () => {
   const { figma } = ToolImage()
