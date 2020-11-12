@@ -28,25 +28,25 @@ const ProjectTemp = ({ data }) => {
 
   let projectTemp = useRef(null)
   let title = useRef(null)
-  let image = useRef(null)
+  // let image = useRef(null)
   let abstract = useRef(null)
   let projectDescription = useRef(null)
   let tl = new TimelineLite({ delay: 0.3 })
 
   useEffect(() => {
     const pageTitle = title.children[0].children[0].children[0]
-    const projectImg = image
+    // const projectImg = image
     const subhead = abstract.children[0]
     const summary = subhead.nextSibling
     const info = summary.nextSibling
     const description = projectDescription
 
-    tl.from(projectImg, 1, { y: 1280, ease: Power3.easeOut }, "start").from(
-      projectImg.firstElementChild,
-      2,
-      { scale: 1.6, ease: Power3.easeOut },
-      0.2
-    )
+    // tl.from(projectImg, 1, { y: 1280, ease: Power3.easeOut }, "start").from(
+    //   projectImg.firstElementChild,
+    //   2,
+    //   { scale: 1.6, ease: Power3.easeOut },
+    //   0.2
+    // )
     tl.staggerFrom(
       [pageTitle, subhead, summary, info, description],
       1,
