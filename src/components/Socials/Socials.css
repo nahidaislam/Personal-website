@@ -1,0 +1,41 @@
+/* Inspired by Brittany Chiang*/
+.socials {
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+}
+
+.social-ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.social-ul li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  padding: 14px;
+}
+.social-media-fill {
+  fill: var(--inactive-color) !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  transform: translateY(3px);
+}
+
+.social-media-fill:hover {
+  fill: var(--active-color) !important;
+  transform: translateY(0);
+}
+
+.social-ul:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--inactive-color);
+}

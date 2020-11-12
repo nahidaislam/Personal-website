@@ -1,0 +1,44 @@
+/* Inspired by Brittany Chiang*/
+.contact {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+}
+.email {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.email a {
+  display: inline-block;
+  font: normal 500 14px var(--playfair-regular);
+  letter-spacing: 0.05em;
+  color: var(--inactive-color);
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  text-decoration: none;
+
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  transform: translateY(3px);
+}
+
+.email a:hover {
+  color: var(--active-color);
+  transform: translateY(0);
+  text-decoration: none;
+}
+
+.contact:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--inactive-color);
+}

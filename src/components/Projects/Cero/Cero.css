@@ -1,0 +1,28 @@
+/* .cero-template {
+  visibility: hidden;
+} */
+.sub-bg {
+  position: relative;
+}
+
+.sub-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100vw;
+  background: rgba(158, 159, 252, 0.09);
+}
+
+.carousel {
+  padding-bottom: 3rem;
+}
+.subhead {
+  float: left;
+  display: inline;
+}
+.subhead img {
+  width: 5rem;
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "playfair-regular";
+  src: url(../../fonts/Playfair/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "rokkitt-regular";
+  src: url(../../fonts/Rokkitt/Rokkitt-Regular.ttf);
+}
+
+@font-face {
+  font-family: "hind-regular";
+  src: url(../../fonts/Hind/Hind-Regular.ttf);
+}
+
+@font-face {
+  font-family: "theScientist";
+  src: url(../../fonts/the-scientist-font/TheScientist-L3EyW.ttf);
+}

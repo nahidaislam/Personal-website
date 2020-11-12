@@ -1,0 +1,97 @@
+.projects {
+  visibility: hidden;
+}
+.button-group {
+  padding: 1rem 0 1rem 2rem;
+}
+.button-group button:focus,
+.button-group button:hover,
+.button-group button:active {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.item .item-hover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, rgba(0, 0, 0, 0.5)),
+    to(rgba(0, 0, 0, 1))
+  ) !important;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0,
+    rgba(146, 148, 248, 0.4) 100%
+  ) !important;
+
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.item .item-hover .item-info {
+  text-align: center;
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.item .item-hover .item-info span {
+  display: block;
+
+  font-size: 18px;
+  color: #fff;
+  opacity: 0;
+
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+  -webkit-transition: all 0.2s ease 0.2s;
+  transition: all 0.2s ease 0.2s;
+}
+
+.item .item-hover .item-info em {
+  display: inline-block;
+  padding: 5px 20px;
+
+  margin-top: 10px;
+  background-color: black;
+  border-radius: 25px;
+
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: white;
+  opacity: 0;
+
+  -webkit-transform: translateY(-50px);
+  transform: translateY(50px);
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  transition: all 0.3s ease-in-out 0.3s;
+}
+
+.item:hover .item-hover {
+  opacity: 1;
+}
+
+.item:hover .item-info em,
+.item:hover .item-info span {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}

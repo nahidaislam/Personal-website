@@ -1,36 +1,114 @@
-import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
-/*
- * This component is built using `gatsby-image` to automatically serve optimized
- * images with lazy loading and reduced file sizes. The image is loaded using a
- * `useStaticQuery`, which allows us to load the image from directly within this
- * component, rather than having to pass the image data down from pages.
- *
- * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.dev/gatsby-image
- * - `useStaticQuery`: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
-const Image = () => {
-  const data = useStaticQuery(graphql`
+const Images = () => {
+  const imageData = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+      illustration: file(
+        relativePath: { eq: "ProfilePicture/illustration.png" }
+      ) {
+        id
+        name
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fixed {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      propic: file(relativePath: { eq: "ProfilePicture/propic.jpg" }) {
+        id
+        name
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      cero: file(relativePath: { eq: "ProjectCards/cero.jpg" }) {
+        id
+        name
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      djtable: file(relativePath: { eq: "ProjectCards/DJTable.jpg" }) {
+        id
+        name
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      disasteroid: file(relativePath: { eq: "ProjectCards/Disasteroid.jpg" }) {
+        id
+        name
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      viashare: file(relativePath: { eq: "ProjectCards/ViaShare.jpg" }) {
+        id
+        name
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      parkout: file(relativePath: { eq: "ProjectCards/Parkout.jpg" }) {
+        id
+        name
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      sl: file(relativePath: { eq: "ProjectCards/SL.jpg" }) {
+        id
+        name
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      saveme: file(relativePath: { eq: "ProjectCards/SaveMe.jpg" }) {
+        id
+        name
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      affectrecognition: file(
+        relativePath: { eq: "ProjectCards/affectRecognition.jpg" }
+      ) {
+        id
+        name
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      cero1: file(relativePath: { eq: "Projects/Cero/img1.png" }) {
+        id
+        name
+        childImageSharp {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
       }
     }
   `)
-
-  if (!data?.placeholderImage?.childImageSharp?.fluid) {
-    return <div>Picture not found</div>
-  }
-
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return imageData
 }
 
-export default Image
+export default Images

@@ -1,0 +1,17 @@
+.header-area .main-menu .navbar .navbar-brand {
+  font: normal 500 24px var(--theScientist);
+  color: var(--title-color);
+  padding: 1rem 0 0 2rem;
+  letter-spacing: 2px;
+}
+
+.header-area .main-menu .nav-item .nav-link {
+  font: normal 500 18px var(--playfair-regular);
+  color: var(--inactive-color);
+  padding: 0 2rem 0 2rem;
+}
+
+.header-area .main-menu .navbar-nav a:hover,
+.header-area .main-menu .nav-item > a.active {
+  color: var(--active-color);
+}

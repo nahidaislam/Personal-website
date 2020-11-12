@@ -1,0 +1,68 @@
+.about-page {
+  visibility: hidden;
+}
+.about-content {
+  padding-top: 4rem;
+}
+.about-text p {
+  font-size: 17px;
+  color: var(--inactive-color);
+  text-align: justify;
+  text-justify: inter-word;
+}
+.about-text h2 {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+
+.about-text .signature {
+  font: normal 500 22px var(--theScientist);
+  color: var(--text-color);
+  letter-spacing: 2px;
+  float: right;
+}
+.signature:before {
+  background-color: var(--text-color);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 30px;
+}
+
+/*Inspired by Jake Jarvis*/
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
