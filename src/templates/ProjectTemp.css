@@ -1,6 +1,10 @@
 .projectTemp {
   visibility: hidden;
 }
+
+.project-info {
+  padding: 3rem 0 3rem 0;
+}
 .bg-full {
   position: relative;
 }

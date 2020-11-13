@@ -17,6 +17,9 @@ import Cero from "../components/Projects/Cero/Cero"
 import Djtable from "../components/Projects/Djtable/Djtable"
 import Disasteroid from "../components/Projects/Disasteroid/Disasteroid"
 import Viashare from "../components/Projects/Viashare/Viashare"
+import Parkout from "../components/Projects/Parkout/Parkout"
+import Sl from "../components/Projects/Sl/Sl"
+import Saveme from "../components/Projects/Saveme/Saveme"
 
 import Layout from "../components/layout.js"
 
@@ -27,6 +30,9 @@ const ProjectTemp = ({ data }) => {
     Djtable,
     Disasteroid,
     Viashare,
+    Parkout,
+    Sl,
+    Saveme,
   }
 
   let projectTemp = useRef(null)
@@ -70,47 +76,48 @@ const ProjectTemp = ({ data }) => {
       <section className="projectTemp" ref={el => (projectTemp = el)}>
         <Container className="template-container" ref={el => (title = el)}>
           <PageTitle title={data.mdx.frontmatter.title} />
-          <div className="project-info py-2">
-            <Row md={12} className="align-items-center project-intro bg-full">
-              <Col md={6} className="pr-5" ref={el => (image = el)}>
-                {data.mdx.frontmatter.thumbnailImage && (
-                  <Img
-                    fluid={
-                      data.mdx.frontmatter.thumbnailImage.childImageSharp.fluid
-                    }
-                  />
-                )}
-              </Col>
-              <Col md={6} className="abstract pl-5" ref={el => (abstract = el)}>
-                <h2 className="py-3">{data.mdx.frontmatter.secondTitle}</h2>
-                <p>{data.mdx.frontmatter.abstract}</p>
+          <Row
+            md={12}
+            className="align-items-center project-intro bg-full project-info "
+          >
+            <Col md={6} className="pr-5" ref={el => (image = el)}>
+              {/* {data.mdx.frontmatter.thumbnailImage && (
+                <Img
+                  fluid={
+                    data.mdx.frontmatter.thumbnailImage.childImageSharp.fluid
+                  }
+                />
+              )} */}
+            </Col>
+            <Col md={6} className="abstract pl-5" ref={el => (abstract = el)}>
+              <h2 className="py-3">{data.mdx.frontmatter.secondTitle}</h2>
+              <p>{data.mdx.frontmatter.abstract}</p>
 
-                <div className="d-flex justify-content-between py-3">
-                  <p>
-                    {" "}
-                    <span className="textColor">Role</span>:{" "}
-                    {data.mdx.frontmatter.role}
-                  </p>
-                  <p>
-                    <span className="textColor">Type</span> :{" "}
-                    {data.mdx.frontmatter.type}
-                  </p>
-                  <p>
-                    <span className="textColor">Date</span>:{" "}
-                    {data.mdx.frontmatter.date}
-                  </p>
-                </div>
-              </Col>
-            </Row>
-
-            <Row md={12}>
-              <div className="content" ref={el => (projectDescription = el)}>
-                <MDXProvider components={shortcodes}>
-                  <MDXRenderer>{data.mdx.body}</MDXRenderer>
-                </MDXProvider>
+              <div className="d-flex justify-content-between py-3">
+                <p>
+                  {" "}
+                  <span className="textColor">Role</span>:{" "}
+                  {data.mdx.frontmatter.role}
+                </p>
+                <p>
+                  <span className="textColor">Type</span> :{" "}
+                  {data.mdx.frontmatter.type}
+                </p>
+                <p>
+                  <span className="textColor">Date</span>:{" "}
+                  {data.mdx.frontmatter.date}
+                </p>
               </div>
-            </Row>
-          </div>
+            </Col>
+          </Row>
+
+          <Row md={12}>
+            <div className="content" ref={el => (projectDescription = el)}>
+              <MDXProvider components={shortcodes}>
+                <MDXRenderer>{data.mdx.body}</MDXRenderer>
+              </MDXProvider>
+            </div>
+          </Row>
         </Container>
       </section>
     </Layout>
