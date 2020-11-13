@@ -6,9 +6,9 @@ import React from "react"
 import PropTypes from "prop-types"
 
 //Components
-import Contact from "./Contact/Contact"
-import Header from "./Header/Header"
-import Socials from "./Socials/Socials"
+import Contact from "./Elements/Contact/Contact"
+import Header from "./Elements/Header/Header"
+import Socials from "./Elements/Socials/Socials"
 
 const Layout = ({ children }) => {
   return (

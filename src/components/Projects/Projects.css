@@ -18,3 +18,11 @@
   color: var(--text-color);
   font-family: var(--rokkitt-regular);
 }
+
+.tools a {
+  color: var(--text-color);
+}
+.tools a:hover {
+  text-decoration: none;
+  color: var(--active-color);
+}

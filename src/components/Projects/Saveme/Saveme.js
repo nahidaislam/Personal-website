@@ -9,6 +9,7 @@ import Button from "../../Elements/Button/Button"
 import Subhead from "../../Elements/Subhead/Subhead"
 import Tool from "../../Elements/Tool/Tool"
 import Video from "../../Elements/Video/Video"
+import NavigationBtn from "../../Elements/NavigationBtn/NavigationBtn"
 
 //Image query
 import ToolImage from "../../toolImage"
@@ -40,10 +41,10 @@ const Saveme = () => {
           </Col>
           <Col md={6} className="pl-5">
             <h4>Technologies used in the project</h4>
-            <Row className=" m-0 pt-4">
+            <Row className=" m-0 pt-4 tools">
               <Tool alt="queensland" imgsrc={queensland.childImageSharp.fixed}>
                 <a href=" https://www.data.qld.gov.au/dataset/qld-wildlife-data-api/resource/773bef14-91d6-4ed5-9253-0146d937b2e6?fbclid=IwAR23p7vR5IiHtBPnWkmpKvixfYfvFkC9fb43PTDmcSC03I7Lmc0H_bY6C-E">
-                  Queensland Government API
+                  Queensland API
                 </a>
               </Tool>
               <Tool alt="bing" imgsrc={bing.childImageSharp.fixed}>
@@ -72,7 +73,7 @@ const Saveme = () => {
       <div className="members">
         <p className="py-5 text-center">
           Special thanks to the project members: Camille Fournier, Haozhou
-          Zhang, Nahida Islam(me) & Ziling Li.
+          Zhang, Nahida Islam (me) & Ziling Li.
         </p>
       </div>
 
@@ -81,6 +82,12 @@ const Saveme = () => {
           Github
         </Button>
       </Row>
+      <NavigationBtn
+        leftHref="/projects/sl"
+        leftText="Previous Project "
+        rightHref="/projects"
+        rightText="Back to projects"
+      />
     </div>
   )
 }

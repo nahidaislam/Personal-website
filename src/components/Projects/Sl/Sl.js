@@ -8,6 +8,7 @@ import { Col, Row } from "react-bootstrap"
 import Subhead from "../../Elements/Subhead/Subhead"
 import Tool from "../../Elements/Tool/Tool"
 import Video from "../../Elements/Video/Video"
+import NavigationBtn from "../../Elements/NavigationBtn/NavigationBtn"
 
 //Image query
 import ToolImage from "../../toolImage"
@@ -58,6 +59,12 @@ const Sl = () => {
           Lukas Finnveden, Nahida Islam (me) & Oliver Lillberg.
         </p>
       </div>
+      <NavigationBtn
+        leftHref="/projects/parkout"
+        leftText="Previous Project "
+        rightHref="/projects/saveme"
+        rightText="Next Project"
+      />
     </div>
   )
 }

@@ -10,6 +10,7 @@ import Img from "gatsby-image"
 import Button from "../../Elements/Button/Button"
 import Subhead from "../../Elements/Subhead/Subhead"
 import Tool from "../../Elements/Tool/Tool"
+import NavigationBtn from "../../Elements/NavigationBtn/NavigationBtn"
 
 //Image query
 import ToolImage from "../../toolImage"
@@ -162,6 +163,13 @@ const Cero = () => {
           Prototype
         </Button>
       </Row>
+
+      <NavigationBtn
+        leftHref="/projects"
+        leftText="Back to Projects "
+        rightHref="/projects/djtable"
+        rightText="Next Project"
+      />
     </div>
   )
 }

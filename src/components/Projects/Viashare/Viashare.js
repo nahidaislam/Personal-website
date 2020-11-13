@@ -10,6 +10,7 @@ import Img from "gatsby-image"
 import Button from "../../Elements/Button/Button"
 import Subhead from "../../Elements/Subhead/Subhead"
 import Tool from "../../Elements/Tool/Tool"
+import NavigationBtn from "../../Elements/NavigationBtn/NavigationBtn"
 
 //Image query
 import ToolImage from "../../toolImage"
@@ -121,6 +122,13 @@ const Viashare = () => {
           Prototype
         </Button>
       </Row>
+
+      <NavigationBtn
+        leftHref="/projects/disasteroid"
+        leftText="Previous Project "
+        rightHref="/projects/parkout"
+        rightText="Next Project"
+      />
     </div>
   )
 }

@@ -9,6 +9,7 @@ import Button from "../../Elements/Button/Button"
 import Subhead from "../../Elements/Subhead/Subhead"
 import Tool from "../../Elements/Tool/Tool"
 import Video from "../../Elements/Video/Video"
+import NavigationBtn from "../../Elements/NavigationBtn/NavigationBtn"
 
 //Image query
 import ToolImage from "../../toolImage"
@@ -111,6 +112,13 @@ const Djtable = () => {
         </Button>
         <Button href="https://djtable.netlify.app/">Website</Button>
       </Row>
+
+      <NavigationBtn
+        leftHref="/projects/cero"
+        leftText="Previous Project "
+        rightHref="/projects/disasteroid"
+        rightText="Next Project"
+      />
     </div>
   )
 }

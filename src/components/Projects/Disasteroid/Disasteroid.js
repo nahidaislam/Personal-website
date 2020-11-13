@@ -9,6 +9,7 @@ import Button from "../../Elements/Button/Button"
 import Subhead from "../../Elements/Subhead/Subhead"
 import Tool from "../../Elements/Tool/Tool"
 import Video from "../../Elements/Video/Video"
+import NavigationBtn from "../../Elements/NavigationBtn/NavigationBtn"
 
 //Image query
 import ToolImage from "../../toolImage"
@@ -102,6 +103,12 @@ const Disasteroid = () => {
         <Button href="https://github.com/arquLV/Disasteroid">Github</Button>
         <Button href="https://disasteroid.netlify.app/">Website</Button>
       </Row>
+      <NavigationBtn
+        leftHref="/projects/djtable"
+        leftText="Previous Project "
+        rightHref="/projects/viashare"
+        rightText="Next Project"
+      />
     </div>
   )
 }

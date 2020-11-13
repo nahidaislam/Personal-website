@@ -11,6 +11,8 @@ import Button from "../../Elements/Button/Button"
 import Subhead from "../../Elements/Subhead/Subhead"
 import Tool from "../../Elements/Tool/Tool"
 import Video from "../../Elements/Video/Video"
+import NavigationBtn from "../../Elements/NavigationBtn/NavigationBtn"
+
 //Image query
 import ToolImage from "../../toolImage"
 
@@ -21,7 +23,6 @@ const Parkout = () => {
   const { js } = ToolImage()
   const { maps } = ToolImage()
   const { angular } = ToolImage()
-  const { xd } = ToolImage()
 
   const data = useStaticQuery(graphql`
     query parkoutImageQuery {
@@ -90,9 +91,6 @@ const Parkout = () => {
           <Col md={6} className="pr-5">
             <h4>Technologies used in the project</h4>
             <Row className=" m-0 pt-4">
-              <Tool alt="xd" imgsrc={xd.childImageSharp.fixed}>
-                Adobe XD
-              </Tool>
               <Tool alt="onsen" imgsrc={onsen.childImageSharp.fixed}>
                 Onsen UI
               </Tool>
@@ -105,6 +103,8 @@ const Parkout = () => {
               <Tool alt="js" imgsrc={js.childImageSharp.fixed}>
                 JavaScript
               </Tool>
+            </Row>
+            <Row>
               <Tool alt="maps" imgsrc={maps.childImageSharp.fixed}>
                 Google maps
               </Tool>
@@ -156,6 +156,12 @@ const Parkout = () => {
           Github
         </Button>
       </Row>
+      <NavigationBtn
+        leftHref="/projects/viashare"
+        leftText="Previous Project "
+        rightHref="/projects/sl"
+        rightText="Next Project"
+      />
     </div>
   )
 }

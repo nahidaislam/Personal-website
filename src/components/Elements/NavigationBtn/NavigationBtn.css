@@ -1,0 +1,13 @@
+.navbtn {
+  padding-top: 4rem;
+}
+
+.navbtn a {
+  font-family: var(--rokkitt-regular);
+  letter-spacing: 2px;
+  color: var(--text-color);
+}
+.navbtn a:hover {
+  text-decoration: none;
+  color: var(--active-color);
+}
