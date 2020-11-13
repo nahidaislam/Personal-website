@@ -14,7 +14,10 @@ import Video from "../../Elements/Video/Video"
 import ToolImage from "../../toolImage"
 
 const Saveme = () => {
-  const { figma } = ToolImage()
+  const { queensland } = ToolImage()
+  const { bing } = ToolImage()
+  const { react } = ToolImage()
+  const { firebase } = ToolImage()
 
   return (
     <div className="djtable-template content-container">
@@ -36,10 +39,25 @@ const Saveme = () => {
             </p>
           </Col>
           <Col md={6} className="pl-5">
-            <h4>The prototyping tool</h4>
-            <Tool alt="figma" imgsrc={figma.childImageSharp.fixed}>
-              Figma
-            </Tool>
+            <h4>Technologies used in the project</h4>
+            <Row className=" m-0 pt-4">
+              <Tool alt="queensland" imgsrc={queensland.childImageSharp.fixed}>
+                <a href=" https://www.data.qld.gov.au/dataset/qld-wildlife-data-api/resource/773bef14-91d6-4ed5-9253-0146d937b2e6?fbclid=IwAR23p7vR5IiHtBPnWkmpKvixfYfvFkC9fb43PTDmcSC03I7Lmc0H_bY6C-E">
+                  Queensland Government API
+                </a>
+              </Tool>
+              <Tool alt="bing" imgsrc={bing.childImageSharp.fixed}>
+                <a href=" https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/">
+                  Bing Image
+                </a>
+              </Tool>
+              <Tool alt="react" imgsrc={react.childImageSharp.fixed}>
+                React.js
+              </Tool>
+              <Tool alt="firebase" imgsrc={firebase.childImageSharp.fixed}>
+                Firebase
+              </Tool>
+            </Row>
           </Col>
         </Row>
       </div>

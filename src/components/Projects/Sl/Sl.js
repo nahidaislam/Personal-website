@@ -13,7 +13,7 @@ import Video from "../../Elements/Video/Video"
 import ToolImage from "../../toolImage"
 
 const Sl = () => {
-  const { figma } = ToolImage()
+  const { sketch } = ToolImage()
 
   return (
     <div className="djtable-template content-container">
@@ -39,9 +39,11 @@ const Sl = () => {
           </Col>
           <Col md={6} className="pl-5">
             <h4>The prototyping tool</h4>
-            <Tool alt="figma" imgsrc={figma.childImageSharp.fixed}>
-              Figma
-            </Tool>
+            <Row className=" m-0 pt-4">
+              <Tool alt="sketch" imgsrc={sketch.childImageSharp.fixed}>
+                Sketch
+              </Tool>
+            </Row>
           </Col>
         </Row>
       </div>

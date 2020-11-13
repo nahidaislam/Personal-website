@@ -85,9 +85,11 @@ const Viashare = () => {
           </Col>
           <Col md={6} className="pl-5">
             <h4>The prototyping tool</h4>
-            <Tool alt="figma" imgsrc={figma.childImageSharp.fixed}>
-              Figma
-            </Tool>
+            <Row className=" m-0 pt-4">
+              <Tool alt="figma" imgsrc={figma.childImageSharp.fixed}>
+                Figma
+              </Tool>
+            </Row>
           </Col>
         </Row>
       </div>

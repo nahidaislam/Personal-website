@@ -15,7 +15,14 @@ import Video from "../../Elements/Video/Video"
 import ToolImage from "../../toolImage"
 
 const Parkout = () => {
-  const { figma } = ToolImage()
+  const { onsen } = ToolImage()
+  const { html } = ToolImage()
+  const { css } = ToolImage()
+  const { js } = ToolImage()
+  const { maps } = ToolImage()
+  const { angular } = ToolImage()
+  const { xd } = ToolImage()
+
   const data = useStaticQuery(graphql`
     query parkoutImageQuery {
       allFile(
@@ -81,17 +88,37 @@ const Parkout = () => {
         </Row>
         <Row md={12}>
           <Col md={6} className="pr-5">
+            <h4>Technologies used in the project</h4>
+            <Row className=" m-0 pt-4">
+              <Tool alt="xd" imgsrc={xd.childImageSharp.fixed}>
+                Adobe XD
+              </Tool>
+              <Tool alt="onsen" imgsrc={onsen.childImageSharp.fixed}>
+                Onsen UI
+              </Tool>
+              <Tool alt="html" imgsrc={html.childImageSharp.fixed}>
+                HTML
+              </Tool>
+              <Tool alt="css" imgsrc={css.childImageSharp.fixed}>
+                CSS
+              </Tool>
+              <Tool alt="js" imgsrc={js.childImageSharp.fixed}>
+                JavaScript
+              </Tool>
+              <Tool alt="maps" imgsrc={maps.childImageSharp.fixed}>
+                Google maps
+              </Tool>
+              <Tool alt="angular" imgsrc={angular.childImageSharp.fixed}>
+                Angular JS
+              </Tool>
+            </Row>
+          </Col>
+          <Col md={6} className="pl-5">
             <h4>The redesign</h4>
             <p>
               For practice purposes, I recently have created an interactive
               prototype of the app in Adobe XD.{" "}
             </p>
-          </Col>
-          <Col md={6} className="pl-5">
-            <h4>The prototyping tool</h4>
-            <Tool alt="figma" imgsrc={figma.childImageSharp.fixed}>
-              Figma
-            </Tool>
           </Col>
         </Row>
       </div>

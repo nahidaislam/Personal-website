@@ -14,7 +14,10 @@ import Video from "../../Elements/Video/Video"
 import ToolImage from "../../toolImage"
 
 const Djtable = () => {
-  const { figma } = ToolImage()
+  const { unity } = ToolImage()
+  const { fmod } = ToolImage()
+  const { blender } = ToolImage()
+  const { ableton } = ToolImage()
 
   return (
     <div className="djtable-template content-container">
@@ -57,10 +60,21 @@ const Djtable = () => {
             </p>
           </Col>
           <Col md={6} className="pl-5">
-            <h4>The prototyping tool</h4>
-            <Tool alt="figma" imgsrc={figma.childImageSharp.fixed}>
-              Figma
-            </Tool>
+            <h4>Technologies used in the project</h4>
+            <Row className=" m-0 pt-4">
+              <Tool alt="unity" imgsrc={unity.childImageSharp.fixed}>
+                Unity
+              </Tool>
+              <Tool alt="Blender" imgsrc={blender.childImageSharp.fixed}>
+                Blender
+              </Tool>
+              <Tool alt="fmod" imgsrc={fmod.childImageSharp.fixed}>
+                Fmod
+              </Tool>
+              <Tool alt="ableton" imgsrc={ableton.childImageSharp.fixed}>
+                Ableton
+              </Tool>
+            </Row>
           </Col>
         </Row>
         <Row md={12}>

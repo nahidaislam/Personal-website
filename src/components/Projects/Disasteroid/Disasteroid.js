@@ -14,7 +14,9 @@ import Video from "../../Elements/Video/Video"
 import ToolImage from "../../toolImage"
 
 const Disasteroid = () => {
-  const { figma } = ToolImage()
+  const { unity } = ToolImage()
+  const { arcore } = ToolImage()
+  const { blender } = ToolImage()
 
   return (
     <div className="disasteroid-template content-container">
@@ -56,10 +58,18 @@ const Disasteroid = () => {
             </p>
           </Col>
           <Col md={6} className="pl-5">
-            <h4>The prototyping tool</h4>
-            <Tool alt="figma" imgsrc={figma.childImageSharp.fixed}>
-              Figma
-            </Tool>
+            <h4>Technologies used in the project</h4>
+            <Row className=" m-0 pt-4">
+              <Tool alt="unity" imgsrc={unity.childImageSharp.fixed}>
+                Unity
+              </Tool>
+              <Tool alt="Arcore" imgsrc={arcore.childImageSharp.fixed}>
+                Arcore
+              </Tool>
+              <Tool alt="blender" imgsrc={blender.childImageSharp.fixed}>
+                Blender
+              </Tool>
+            </Row>
           </Col>
         </Row>
         <Row md={12}>
