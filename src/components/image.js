@@ -3,17 +3,6 @@ import { graphql, useStaticQuery } from "gatsby"
 const Images = () => {
   const imageData = useStaticQuery(graphql`
     query {
-      illustration: file(
-        relativePath: { eq: "ProfilePicture/illustration.png" }
-      ) {
-        id
-        name
-        childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       propic: file(relativePath: { eq: "ProfilePicture/propic.jpg" }) {
         id
         name

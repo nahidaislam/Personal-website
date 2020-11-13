@@ -44,7 +44,7 @@ const Saveme = () => {
         </Row>
       </div>
 
-      <Subhead subtitle="Demo of SL: Station map" />
+      <Subhead subtitle="Demo of Save Me!" />
       <div className="demo-video ">
         <Video
           title="Save Me!"

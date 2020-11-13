@@ -11,8 +11,6 @@ import illustration from "../../images/ProfilePicture/illustration.png"
 import ring from "../../images/ring.png"
 
 const Home = () => {
-  // const { illustration } = Images()
-
   let home = useRef(null)
   let content = useRef(null)
   let images = useRef(null)
@@ -59,13 +57,14 @@ const Home = () => {
           <Col md={8} ref={el => (content = el)}>
             <div className="welcome">
               <h1>Hi, my name is Nahida Islam</h1>
-              <h6>UX/UI Designer | Web developer</h6>
+              <h6>Web developer | UX/UI Designer </h6>
               <div className="description">
                 <p>
-                  Based in Stockholm. I am interested in creating user-friendly
-                  products using User Research, tests and wireframes and also
-                  giving them life through coding. I am now up for the start of
-                  my career and new challenges.
+                  Based in Stockholm. I define myself as a creative coder. I am
+                  interested in creating user-friendly products using User
+                  Research, tests and wireframes and also giving them life
+                  through coding. I am now up for the start of my career and new
+                  challenges.
                 </p>
               </div>
             </div>
@@ -78,7 +77,6 @@ const Home = () => {
           <Col md={4} ref={el => (images = el)}>
             <div className="loader">
               <div className="illustration ">
-                {/* <Img fixed={illustration.childImageSharp.fixed} alt="Illustration of me" /> */}
                 <img src={illustration} alt="" />
                 <p className="text-center credit">
                   {" "}

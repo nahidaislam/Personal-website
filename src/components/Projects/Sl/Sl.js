@@ -53,7 +53,7 @@ const Sl = () => {
       <div className="members">
         <p className="py-5 text-center">
           Special thanks to the project members: Eldar Zeynalli, Filip Bäck,
-          Lukas Finnveden, Nahida Islam(me) & Oliver Lillberg.
+          Lukas Finnveden, Nahida Islam (me) & Oliver Lillberg.
         </p>
       </div>
     </div>

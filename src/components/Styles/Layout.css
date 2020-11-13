@@ -37,6 +37,15 @@ p {
   text-justify: inter-word;
 }
 
+.image-item {
+  height: 100%;
+  width: auto;
+}
+.image-grid img:hover {
+  transform: scale(1.1);
+  transition: 0.6s all ease !important;
+}
+
 /* CSS variables */
 :root {
   --background-color: #121212;

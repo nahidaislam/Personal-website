@@ -2,7 +2,7 @@
 import "../Projects.css"
 
 import React from "react"
-import { Carousel, Col, Row } from "react-bootstrap"
+import { Col, Row } from "react-bootstrap"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
@@ -10,35 +10,35 @@ import Img from "gatsby-image"
 import Button from "../../Elements/Button/Button"
 import Subhead from "../../Elements/Subhead/Subhead"
 import Tool from "../../Elements/Tool/Tool"
-
+import Video from "../../Elements/Video/Video"
 //Image query
 import ToolImage from "../../toolImage"
 
 const Parkout = () => {
   const { figma } = ToolImage()
-  //   const data = useStaticQuery(graphql`
-  //     query viaShareImageQuery {
-  //       allFile(
-  //         filter: {
-  //           ext: { regex: "/(jpg)|/(jpeg)|(png)/" }
-  //           relativeDirectory: { eq: "Projects/Parkout" }
-  //         }
-  //       ) {
-  //         edges {
-  //           node {
-  //             id
-  //             name
-  //             base
-  //             childImageSharp {
-  //               fluid {
-  //                 ...GatsbyImageSharpFluid
-  //               }
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   `)
+  const data = useStaticQuery(graphql`
+    query parkoutImageQuery {
+      allFile(
+        filter: {
+          ext: { regex: "/(jpg)|/(jpeg)|(png)/" }
+          relativeDirectory: { eq: "Projects/Parkout" }
+        }
+      ) {
+        edges {
+          node {
+            id
+            name
+            base
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <div className="parkout-template content-container">
@@ -97,24 +97,27 @@ const Parkout = () => {
       </div>
 
       <Subhead subtitle="The Re-designed app" />
-      <div className="carousel">
-        {/* <Carousel>
-          {data.allFile.edges.map(({ node }) => (
-            <Carousel.Item>
-              <Img
-                key={node.id}
-                fluid={node.childImageSharp.fluid}
-                alt={node.base.split(".")[0]}
-              />
-            </Carousel.Item>
-          ))}
-        </Carousel> */}
+      <Row md={12}>
+        {data.allFile.edges.map(({ node }) => (
+          <Col md={6} className="image-grid">
+            <Img
+              key={node.id}
+              className="image-item"
+              fluid={node.childImageSharp.fluid}
+              alt={node.base.split(".")[0]}
+            />
+          </Col>
+        ))}
+      </Row>
+      <div className="demo-video ">
+        <Video title="Parkout" src="https://player.vimeo.com/video/445001199" />
       </div>
+
       <div className="members">
         {" "}
         <p className="py-5 text-center">
           Special thanks to the project members: Emil Erlandsson, Emilia Sjögren
-          Larsson, Felix Dimberg & Nahida Islam(me).
+          Larsson, Felix Dimberg & Nahida Islam (me).
         </p>
       </div>
 

@@ -107,6 +107,18 @@ const Cero = () => {
             </Carousel.Item>
           ))}
         </Carousel>
+        {/* <Row md={12}>
+          {data.allFile.edges.map(({ node }) => (
+            <Col md={6} className="image-grid py-5">
+              <Img
+                key={node.id}
+                className="image-item"
+                fluid={node.childImageSharp.fluid}
+                alt={node.base.split(".")[0]}
+              />
+            </Col>
+          ))}
+        </Row> */}
       </div>
 
       <Subhead subtitle="Learnings" />
