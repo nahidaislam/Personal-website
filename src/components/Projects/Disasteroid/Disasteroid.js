@@ -99,15 +99,15 @@ const Disasteroid = () => {
         </p>
       </div>
 
-      <Row className=" m-0 p-0 justify-content-around">
+      <Row className=" m-0 p-0 justify-content-center">
         <Button href="https://github.com/arquLV/Disasteroid">Github</Button>
         <Button href="https://disasteroid.netlify.app/">Website</Button>
       </Row>
       <NavigationBtn
         leftHref="/projects/djtable"
-        leftText="Previous Project "
+        leftText="Previous project "
         rightHref="/projects/viashare"
-        rightText="Next Project"
+        rightText="Next project"
       />
     </div>
   )

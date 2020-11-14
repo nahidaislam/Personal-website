@@ -125,37 +125,35 @@ const Cero = () => {
       </div>
 
       <Subhead subtitle="Learnings" />
-      <div className="learning-section py-3">
-        <Row md={12}>
-          <Col md={6} className="pr-5">
-            <h4>Why user wants it</h4>
-            <p>
-              It is important to put the weight on figuring out why a user wants
-              something, rather than what the user wants. According to the
-              evaluation results, most of the test subjects agreed to the idea
-              of having a Gantt-chart. However, the purpose of it was not clear
-              for some of the test subjects. Most of the subjects asked for a
-              progression bar, presenting how each participant is doing with the
-              assigned measure. I in this case focused solely on what the user
-              wants, which can be considered as a weakness.
-            </p>
-          </Col>
-          <Col md={6} className="pl-5">
-            <h4>User does not always know</h4>
-            <p>
-              The result of the pre-study reveals that the users seldom can
-              articulate an answer to how would they design a specific function.
-              It was evident in the results that the user does not always know
-              what they would like to see in a product before they get a glimpse
-              of it in a live version. An iterative UCD (User centered design)
-              process is, therefore, essential to be certain about the design
-              choice
-            </p>
-          </Col>
-        </Row>
-      </div>
+      <Row md={12} className="learning-section py-4">
+        <Col md={6} className="pr-5">
+          <h4>Why user wants it</h4>
+          <p>
+            It is important to put the weight on figuring out why a user wants
+            something, rather than what the user wants. According to the
+            evaluation results, most of the test subjects agreed to the idea of
+            having a Gantt-chart. However, the purpose of it was not clear for
+            some of the test subjects. Most of the subjects asked for a
+            progression bar, presenting how each participant is doing with the
+            assigned measure. I in this case focused solely on what the user
+            wants, which can be considered as a weakness.
+          </p>
+        </Col>
+        <Col md={6} className="pl-5">
+          <h4>User does not always know</h4>
+          <p>
+            The result of the pre-study reveals that the users seldom can
+            articulate an answer to how would they design a specific function.
+            It was evident in the results that the user does not always know
+            what they would like to see in a product before they get a glimpse
+            of it in a live version. An iterative UCD (User centered design)
+            process is, therefore, essential to be certain about the design
+            choice
+          </p>
+        </Col>
+      </Row>
 
-      <Row className=" m-0 p-0 justify-content-around">
+      <Row className=" m-0 p-0 justify-content-center">
         <Button href="https://kth.diva-portal.org/smash/record.jsf?dswid=-2112&pid=diva2%3A1459712&c=1&searchType=SIMPLE&language=sv&query=nahida+islam&af=%5B%5D&aq=%5B%5B%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&sortOrder2=title_sort_asc&onlyFullText=false&sf=all">
           Thesis report
         </Button>
@@ -166,9 +164,9 @@ const Cero = () => {
 
       <NavigationBtn
         leftHref="/projects"
-        leftText="Back to Projects "
+        leftText="View all projects "
         rightHref="/projects/djtable"
-        rightText="Next Project"
+        rightText="Next project"
       />
     </div>
   )

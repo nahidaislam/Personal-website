@@ -73,7 +73,11 @@ const ProjectTemp = ({ data }) => {
   }, [tl])
   return (
     <Layout>
-      <section className="projectTemp" ref={el => (projectTemp = el)}>
+      <section
+        className="projectTemp"
+        id="template"
+        ref={el => (projectTemp = el)}
+      >
         <Container className="template-container" ref={el => (title = el)}>
           <PageTitle title={data.mdx.frontmatter.title} />
           <Row

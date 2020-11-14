@@ -84,9 +84,9 @@ const Saveme = () => {
       </Row>
       <NavigationBtn
         leftHref="/projects/sl"
-        leftText="Previous Project "
+        leftText="Previous project "
         rightHref="/projects"
-        rightText="Back to projects"
+        rightText="View all projects"
       />
     </div>
   )

@@ -21,7 +21,7 @@ const Djtable = () => {
   const { ableton } = ToolImage()
 
   return (
-    <div className="djtable-template content-container">
+    <div className="djtable-template content-container" id="djtable">
       <div className="py-4">
         <Row md={12}>
           <Col md={6} className="pr-5">
@@ -106,7 +106,7 @@ const Djtable = () => {
         </p>
       </div>
 
-      <Row className=" m-0 p-0 justify-content-around">
+      <Row className=" m-0 p-0 justify-content-center">
         <Button href="https://github.com/AugustinBariant/DJTable">
           Github
         </Button>
@@ -115,9 +115,9 @@ const Djtable = () => {
 
       <NavigationBtn
         leftHref="/projects/cero"
-        leftText="Previous Project "
+        leftText="Previous project "
         rightHref="/projects/disasteroid"
-        rightText="Next Project"
+        rightText="Next project"
       />
     </div>
   )

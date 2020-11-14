@@ -2,12 +2,23 @@
   padding-top: 4rem;
 }
 
-.navbtn a {
+.navbtn a,
+.scrollupBtn button {
   font-family: var(--rokkitt-regular);
   letter-spacing: 2px;
   color: var(--text-color);
+  cursor: pointer;
 }
-.navbtn a:hover {
+.navbtn a:hover,
+.scrollupBtn button:hover {
   text-decoration: none;
   color: var(--active-color);
+  cursor: pointer;
+}
+
+.scrollupBtn button:focus,
+.scrollupBtn button:hover,
+.scrollupBtn button:active {
+  outline: 0px !important;
+  box-shadow: none !important;
 }

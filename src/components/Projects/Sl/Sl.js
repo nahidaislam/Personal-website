@@ -61,9 +61,9 @@ const Sl = () => {
       </div>
       <NavigationBtn
         leftHref="/projects/parkout"
-        leftText="Previous Project "
+        leftText="Previous project "
         rightHref="/projects/saveme"
-        rightText="Next Project"
+        rightText="Next project"
       />
     </div>
   )

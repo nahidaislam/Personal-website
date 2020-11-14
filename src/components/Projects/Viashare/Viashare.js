@@ -125,9 +125,9 @@ const Viashare = () => {
 
       <NavigationBtn
         leftHref="/projects/disasteroid"
-        leftText="Previous Project "
+        leftText="Previous project "
         rightHref="/projects/parkout"
-        rightText="Next Project"
+        rightText="Next project"
       />
     </div>
   )

@@ -148,7 +148,7 @@ const Parkout = () => {
         </p>
       </div>
 
-      <Row className=" m-0 p-0 justify-content-around">
+      <Row className=" m-0 p-0 justify-content-center">
         <Button href="https://www.behance.net/gallery/102203109/ParkOut">
           Behance
         </Button>
@@ -158,9 +158,9 @@ const Parkout = () => {
       </Row>
       <NavigationBtn
         leftHref="/projects/viashare"
-        leftText="Previous Project "
+        leftText="Previous project "
         rightHref="/projects/sl"
-        rightText="Next Project"
+        rightText="Next project"
       />
     </div>
   )

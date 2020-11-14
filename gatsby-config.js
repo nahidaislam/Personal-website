@@ -20,21 +20,7 @@ module.exports = {
         path: `${__dirname}/src/components/Projects`,
       },
     },
-    // {
-    //   resolve: `gatsby-transformer-remark`,
-    //   options: {
-    //     plugins: [
-    //       {
-    //         resolve: `gatsby-remark-images`,
-    //         options: {
-    //           maxWidth: 50,
-    //           backgroundColor: `none`,
-    //           wrapperStyle: `margin-left:0`,
-    //         },
-    //       },
-    //     ],
-    //   },
-    // },
+    `gatsby-plugin-smoothscroll`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
