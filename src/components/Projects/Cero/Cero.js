@@ -56,24 +56,6 @@ const Cero = () => {
       <div className="py-4">
         <Row md={12}>
           <Col md={6} className="pr-5">
-            <h4>The project goal</h4>
-            <p>
-              Many of today’s technologies lack the essence of usability and UX
-              due to the gap between the practice and the literature. This study
-              explores how the usability of an existing tool, namely the CERO
-              simulation tool can be improved through usercentered design.
-            </p>
-          </Col>
-          <Col md={6} className="pl-5">
-            <h4>The research process</h4>
-            <li>Specify the context of the use</li>
-            <li>Specify requirements</li>
-            <li>Create a design solution</li>
-            <li>Evaluate the design solution</li>
-          </Col>
-        </Row>
-        <Row md={12}>
-          <Col md={6} className="pr-5">
             <h4>The CERO simulation tool</h4>
             <p>
               CERO (Climate and Economic Research in Organizations) is a concept
@@ -85,6 +67,24 @@ const Cero = () => {
               The organizations/companies have access to the tool after the
               workshop to continue working with it internally.
             </p>
+          </Col>
+          <Col md={6} className="pl-5">
+            <h4>The project goal</h4>
+            <p>
+              Many of today’s technologies lack the essence of usability and UX
+              due to the gap between the practice and the literature. This study
+              explores how the usability of an existing tool, namely the CERO
+              simulation tool can be improved through usercentered design.
+            </p>
+          </Col>
+        </Row>
+        <Row md={12}>
+          <Col md={6} className="pr-5">
+            <h4>The research process</h4>
+            <li>Specify the context of the use</li>
+            <li>Specify requirements</li>
+            <li>Create a design solution</li>
+            <li>Evaluate the design solution</li>
           </Col>
           <Col md={6} className="pl-5">
             <h4>The prototyping tool</h4>

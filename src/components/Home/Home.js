@@ -53,8 +53,8 @@ const Home = () => {
   return (
     <section className="home" ref={el => (home = el)}>
       <Container className="intro">
-        <Row>
-          <Col md={8} ref={el => (content = el)}>
+        <Row md={12}>
+          <Col md={8} ref={el => (content = el)} className="pt-5">
             <div className="welcome">
               <h1>Hi, my name is Nahida Islam</h1>
               <h6>Web developer | UX/UI Designer </h6>

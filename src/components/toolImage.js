@@ -174,6 +174,24 @@ const ToolImage = () => {
           }
         }
       }
+      windows: file(relativePath: { eq: "Tool/windows.png" }) {
+        id
+        name
+        childImageSharp {
+          fixed(width: 50, height: 50) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      kubuntu: file(relativePath: { eq: "Tool/kubuntu.png" }) {
+        id
+        name
+        childImageSharp {
+          fixed(width: 50, height: 50) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
   return toolImageData

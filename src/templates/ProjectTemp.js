@@ -50,7 +50,7 @@ const ProjectTemp = ({ data }) => {
     const info = summary.nextSibling
     const description = projectDescription
 
-    tl.from(projectImg, 1, { y: 1280, ease: Power3.easeOut }, "start").from(
+    tl.from(projectImg, 1, { ease: Power3.easeOut }, "start").from(
       projectImg.firstElementChild,
       2,
       { scale: 1.6, ease: Power3.easeOut },
@@ -85,13 +85,13 @@ const ProjectTemp = ({ data }) => {
             className="align-items-center project-intro bg-full project-info "
           >
             <Col md={6} className="pr-5" ref={el => (image = el)}>
-              {/* {data.mdx.frontmatter.thumbnailImage && (
+              {data.mdx.frontmatter.thumbnailImage && (
                 <Img
                   fluid={
                     data.mdx.frontmatter.thumbnailImage.childImageSharp.fluid
                   }
                 />
-              )} */}
+              )}
             </Col>
             <Col md={6} className="abstract pl-5" ref={el => (abstract = el)}>
               <h2 className="py-3">{data.mdx.frontmatter.secondTitle}</h2>

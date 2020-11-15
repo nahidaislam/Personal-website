@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 const Tool = ({ alt, imgsrc, children }) => {
   return (
-    <div className="tool pr-5 text-center">
+    <div className="tool px-3 text-center">
       <Img fixed={imgsrc} alt={alt} />
       <p> {children}</p>
     </div>

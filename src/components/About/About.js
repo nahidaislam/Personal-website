@@ -8,12 +8,28 @@ import Img from "gatsby-image"
 
 //Image Query
 import Images from "../image"
+import ToolImage from "../toolImage"
 
 //Component
 import PageTitle from "../Elements/PageTitle/PageTitle"
+import Subhead from "../Elements/Subhead/Subhead"
+import Tool from "../Elements/Tool/Tool"
+import Button from "../Elements/Button/Button"
 
 const About = () => {
   const { propic } = Images()
+  const { figma } = ToolImage()
+  const { xd } = ToolImage()
+  const { sketch } = ToolImage()
+  const { html } = ToolImage()
+  const { css } = ToolImage()
+  const { js } = ToolImage()
+  const { react } = ToolImage()
+  const { windows } = ToolImage()
+  const { kubuntu } = ToolImage()
+  const { unity } = ToolImage()
+  const { blender } = ToolImage()
+
   let aboutPage = useRef(null)
   let images = useRef(null)
   let title = useRef(null)
@@ -54,7 +70,7 @@ const About = () => {
   }, [tl])
 
   return (
-    <section className="about-page" ref={el => (aboutPage = el)}>
+    <section className="about-page content" ref={el => (aboutPage = el)}>
       <Container className="content-container" ref={el => (title = el)}>
         <PageTitle title="About" />
         <Row className="about-content">
@@ -98,9 +114,69 @@ const About = () => {
             <p className="signature"> Nahida Islam</p>
           </Col>
         </Row>
-        {/* <Row className="about-content">
-
-        </Row> */}
+        <Subhead subtitle="Skills & competencies" />
+        <Row className="skills pb-3">
+          <Col md={6} className="text-center">
+            <h4>Web development</h4>
+            <Row className=" m-0 p-2 justify-content-center tools">
+              <Tool alt="html" imgsrc={html.childImageSharp.fixed}>
+                HTML
+              </Tool>
+              <Tool alt="css" imgsrc={css.childImageSharp.fixed}>
+                CSS
+              </Tool>
+              <Tool alt="Javascript" imgsrc={js.childImageSharp.fixed}>
+                Javascript
+              </Tool>
+              <Tool alt="react" imgsrc={react.childImageSharp.fixed}>
+                React.js
+              </Tool>
+            </Row>
+          </Col>
+          <Col md={6} className="text-center">
+            <h4>Prototyping tools</h4>
+            <Row className=" m-0 p-2 justify-content-center tools">
+              <Tool alt="figma" imgsrc={figma.childImageSharp.fixed}>
+                Figma
+              </Tool>
+              <Tool alt="xd" imgsrc={xd.childImageSharp.fixed}>
+                Adobe XD
+              </Tool>
+              <Tool alt="sketch" imgsrc={sketch.childImageSharp.fixed}>
+                Sketch
+              </Tool>
+            </Row>
+          </Col>
+        </Row>
+        <Row md={12}>
+          <Col md={6} className="text-center">
+            <h4>Other competencies</h4>
+            <Row className=" m-0  p-2 justify-content-center tools">
+              <Tool alt="unity" imgsrc={unity.childImageSharp.fixed}>
+                Unity 3D
+              </Tool>
+              <Tool alt="blender" imgsrc={blender.childImageSharp.fixed}>
+                Blender
+              </Tool>
+            </Row>
+          </Col>
+          <Col md={6} className="text-center">
+            <h4>Operative systems</h4>
+            <Row className=" m-0 p-2 justify-content-center tools">
+              <Tool alt="windows" imgsrc={windows.childImageSharp.fixed}>
+                Windows
+              </Tool>
+              <Tool alt="kubuntu" imgsrc={kubuntu.childImageSharp.fixed}>
+                Kubuntu
+              </Tool>
+            </Row>
+          </Col>
+        </Row>
+        <Row className=" m-0 pt-5 justify-content-center">
+          <Button href="https://gits-15.sys.kth.se/camillef/DH2642-save-me">
+            Resumé
+          </Button>
+        </Row>
       </Container>
     </section>
   )
