@@ -60,11 +60,10 @@ const Home = () => {
               <h6>Web developer | UX/UI Designer </h6>
               <div className="description">
                 <p>
-                  Based in Stockholm. I define myself as a creative coder. I am
-                  interested in creating user-friendly products using User
-                  Research, tests and wireframes and also giving them life
-                  through coding. I am now up for the start of my career and new
-                  challenges.
+                  I am a Stockholm based creative coder. I am interested in
+                  creating user-friendly products using User Research, tests and
+                  wireframes and also giving them life through coding. I am now
+                  up for the start of my career and new challenges.
                 </p>
               </div>
             </div>

@@ -70,7 +70,7 @@ const About = () => {
   }, [tl])
 
   return (
-    <section className="about-page content" ref={el => (aboutPage = el)}>
+    <section className="about-page" ref={el => (aboutPage = el)}>
       <Container className="content-container" ref={el => (title = el)}>
         <PageTitle title="About" />
         <Row className="about-content">
@@ -115,7 +115,7 @@ const About = () => {
           </Col>
         </Row>
         <Subhead subtitle="Skills & competencies" />
-        <Row className="skills pb-3">
+        <Row className="skills pb-3 content">
           <Col md={6} className="text-center">
             <h4>Web development</h4>
             <Row className=" m-0 p-2 justify-content-center tools">
@@ -148,7 +148,7 @@ const About = () => {
             </Row>
           </Col>
         </Row>
-        <Row md={12}>
+        <Row md={12} className="content">
           <Col md={6} className="text-center">
             <h4>Other competencies</h4>
             <Row className=" m-0  p-2 justify-content-center tools">

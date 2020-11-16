@@ -18,7 +18,12 @@ export default class Header extends Component {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav as="ul" className="ml-auto">
                 <Nav.Item as="li" className="nav-item ">
-                  <Link to="/" className="nav-link" activeClassName="active">
+                  <Link
+                    exact
+                    to="/"
+                    className="nav-link"
+                    activeClassName="active"
+                  >
                     Home
                   </Link>
                 </Nav.Item>
@@ -27,12 +32,14 @@ export default class Header extends Component {
                     to="/projects"
                     className="nav-link"
                     activeClassName="active"
+                    partiallyActive={true}
                   >
                     Projects
                   </Link>
                 </Nav.Item>
                 <Nav.Item as="li">
                   <Link
+                    exact
                     to="/about"
                     className="nav-link"
                     activeClassName="active"
@@ -42,6 +49,7 @@ export default class Header extends Component {
                 </Nav.Item>
                 <Nav.Item as="li">
                   <Link
+                    exact
                     to="/hobbies"
                     className="nav-link"
                     activeClassName="active"
