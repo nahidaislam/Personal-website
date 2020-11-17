@@ -19,7 +19,7 @@ const Cards = () => {
 
   return (
     <div className="cards">
-      <Col md={4} sm={6} className="p-3 my-project design">
+      <Col lg={4} md={6} sm={12} className="p-3 my-project design">
         <Card
           imgsrc={cero.childImageSharp.fluid}
           title="CERO Simulation tool"
@@ -28,7 +28,7 @@ const Cards = () => {
           description="UX Design"
         />
       </Col>
-      <Col md={4} sm={6} className="p-3 my-project game">
+      <Col lg={4} md={6} sm={12} className="p-3 my-project game">
         <Card
           imgsrc={djtable.childImageSharp.fluid}
           title="DJTable"
@@ -37,7 +37,7 @@ const Cards = () => {
           description="Tabletop game"
         />
       </Col>
-      <Col md={4} sm={6} className="p-3 my-project game">
+      <Col lg={4} md={6} sm={12} className="p-3 my-project game">
         <Card
           imgsrc={disasteroid.childImageSharp.fluid}
           title="Disasteroid"
@@ -46,7 +46,7 @@ const Cards = () => {
           description="AR game"
         />
       </Col>
-      <Col md={4} sm={6} className="p-3 my-project design">
+      <Col lg={4} md={6} sm={12} className="p-3 my-project design">
         <Card
           imgsrc={viashare.childImageSharp.fluid}
           title="The ViaShare"
@@ -55,7 +55,7 @@ const Cards = () => {
           description="Design"
         />
       </Col>
-      <Col md={4} sm={6} className="p-3 my-project design">
+      <Col lg={4} md={6} sm={12} className="p-3 my-project design">
         <Card
           imgsrc={parkout.childImageSharp.fluid}
           title="Parkout"
@@ -64,7 +64,7 @@ const Cards = () => {
           description="Mobile application/ Design"
         />
       </Col>
-      <Col md={4} sm={6} className="p-3 my-project design">
+      <Col lg={4} md={6} sm={12} className="p-3 my-project design">
         <Card
           imgsrc={sl.childImageSharp.fluid}
           title="SL: Station Map"
@@ -73,7 +73,7 @@ const Cards = () => {
           description="Design"
         />
       </Col>
-      <Col md={4} sm={6} className="p-3 my-project game">
+      <Col lg={4} md={6} sm={12} className="p-3 my-project game">
         <Card
           imgsrc={saveme.childImageSharp.fluid}
           title="SaveMe!"

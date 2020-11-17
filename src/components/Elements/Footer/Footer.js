@@ -2,13 +2,13 @@
 import "./Footer.css"
 
 import React from "react"
-import { FaBehance, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
+// import { FaBehance, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 
 const Footer = () => {
   return (
     <div className="footer">
       <footer class="footer-area">
-        <div class="container">
+        {/* <div class="container">
           <div class="site-logo text-center py-4">
             <a href="#">
               <img src="./images/logo.png" alt="logo" />
@@ -34,7 +34,7 @@ const Footer = () => {
               Copyright ©2020 All rights reserved | Nahida Islam
             </p>
           </div>
-        </div>
+        </div> */}
       </footer>
     </div>
   )
