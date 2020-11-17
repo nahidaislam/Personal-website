@@ -75,4 +75,7 @@
   .loader img {
     display: none;
   }
+  .loader p {
+    display: none;
+  }
 }

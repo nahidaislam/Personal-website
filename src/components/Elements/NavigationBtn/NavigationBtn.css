@@ -22,3 +22,10 @@
   outline: 0px !important;
   box-shadow: none !important;
 }
+
+@media (max-width: 990px) {
+  .scrollupBtn button,
+  .navbtn a {
+    font-size: 14px;
+  }
+}

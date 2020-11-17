@@ -9,6 +9,7 @@ import PropTypes from "prop-types"
 import Contact from "./Elements/Contact/Contact"
 import Header from "./Elements/Header/Header"
 import Socials from "./Elements/Socials/Socials"
+import Footer from "./Elements/Footer/Footer"
 
 const Layout = ({ children }) => {
   return (
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <Contact />
       </div>
+      {/* <Footer /> */}
     </>
   )
 }

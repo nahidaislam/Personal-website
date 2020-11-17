@@ -39,3 +39,9 @@
   margin: 0px auto;
   background-color: var(--inactive-color);
 }
+
+@media (max-width: 990px) {
+  .socials {
+    visibility: hidden;
+  }
+}
