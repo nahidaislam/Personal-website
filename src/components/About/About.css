@@ -4,31 +4,17 @@
 .about-content {
   padding-top: 4rem;
 }
-.about-text p {
-  font-size: 17px;
-  color: var(--inactive-color);
-  text-align: justify;
-  text-justify: inter-word;
-}
+
 .about-text h2 {
   font-size: 24px;
   padding-bottom: 15px;
 }
 
-.about-text .signature {
-  font: normal 500 22px var(--theScientist);
+.signature {
+  font-family: var(--theScientist);
+  font-size: 18px;
   color: var(--text-color);
   letter-spacing: 2px;
-  float: right;
-}
-.signature:before {
-  background-color: var(--text-color);
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  width: 30px;
 }
 
 /*Inspired by Jake Jarvis*/

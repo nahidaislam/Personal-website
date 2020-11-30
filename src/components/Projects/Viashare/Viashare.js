@@ -45,52 +45,52 @@ const Viashare = () => {
     <div className="viashare-template content-container">
       <div className="py-4">
         <Row md={12}>
-          <Col md={6} className="pr-5">
-            <h4>The social feature</h4>
-            <p>
-              The ViaShare feature is implemented in every episode of a program
-              on Viafree. By clicking on the ViaShare button you get access to
-              your Facebook friends list. You can select either a specific
-              friend or several friends with whom you would like to watch a
-              program. After selecting your desired friend/s you can set up a
-              date and a time. Last but not least, you get a preview of all of
-              your previous selection and the option to write a message. Last
-              but not least, click the Send button and your invitation is
-              successfully sent!
-            </p>
+          <Col md={6}>
+            <Col md={12}>
+              <h4>The social feature</h4>
+              <p>
+                The ViaShare feature is implemented in every episode of a
+                program on Viafree. By clicking on the ViaShare button you get
+                access to your Facebook friends list. You can select either a
+                specific friend or several friends with whom you would like to
+                watch a program. After selecting your desired friend/s you can
+                set up a date and a time. Last but not least, you get a preview
+                of all of your previous selection and the option to write a
+                message. Last but not least, click the Send button and your
+                invitation is successfully sent!
+              </p>
+
+              <h4>Simplify the communication</h4>
+              <p>
+                The invitation will be sent as a link on Facebook Messenger. The
+                invited user will get the invitation as a message. The user will
+                then get a choice of accepting or declining the invitation. If
+                the invitation gets accepted - a link to the episode will
+                appear. The user will get an additional notification with the
+                link 30 minutes before the planned event. The message will be
+                sent in a group message if a group is invited.
+              </p>
+            </Col>
           </Col>
-          <Col md={6} className="pl-5">
-            <h4>Establish the plan</h4>
-            <p>
-              Now it’s time to watch the program together. The feature enables
-              you to watch the program at the same time. You can even talk to
-              and/or see each other. The person who sent the invitation is in
-              control of the remote. In other words, the person is in control of
-              playing and pausing the program. In the video player, all
-              participants can see who is logged in.
-            </p>
-          </Col>
-        </Row>
-        <Row md={12}>
-          <Col md={6} className="pr-5">
-            <h4>Simplify the communication</h4>
-            <p>
-              The invitation will be sent as a link on Facebook Messenger. The
-              invited user will get the invitation as a message. The user will
-              then get a choice of accepting or declining the invitation. If the
-              invitation gets accepted - a link to the episode will appear. The
-              user will get an additional notification with the link 30 minutes
-              before the planned event. The message will be sent in a group
-              message if a group is invited.
-            </p>
-          </Col>
-          <Col md={6} className="pl-5">
-            <h4>The prototyping tool</h4>
-            <Row className=" m-0 pt-4">
-              <Tool alt="figma" imgsrc={figma.childImageSharp.fixed}>
-                Figma
-              </Tool>
-            </Row>
+          <Col md={6}>
+            <Col md={12}>
+              <h4>Establish the plan</h4>
+              <p>
+                Now it’s time to watch the program together. The feature enables
+                you to watch the program at the same time. You can even talk to
+                and/or see each other. The person who sent the invitation is in
+                control of the remote. In other words, the person is in control
+                of playing and pausing the program. In the video player, all
+                participants can see who is logged in.
+              </p>
+
+              <h4>The prototyping tool</h4>
+              <Row className=" m-0 pt-4">
+                <Tool alt="figma" imgsrc={figma.childImageSharp.fixed}>
+                  Figma
+                </Tool>
+              </Row>
+            </Col>
           </Col>
         </Row>
       </div>

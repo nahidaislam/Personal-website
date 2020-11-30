@@ -8,9 +8,3 @@
   text-decoration: none;
   color: var(--active-color);
 }
-.hobbies-content p {
-  font-size: 17px;
-  color: var(--inactive-color);
-  text-align: justify;
-  text-justify: inter-word;
-}

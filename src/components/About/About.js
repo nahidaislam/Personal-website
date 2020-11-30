@@ -111,7 +111,12 @@ const About = () => {
               work and do not hesitate to contact me if you want to collaborate
               or ask a question.
             </p>
-            <p className="signature"> Nahida Islam</p>
+            {/* <p className="signature"> Nahida Islam</p> */}
+            <footer className="blockquote-footer float-right">
+              <cite className="signature" title="Nahida Islam">
+                Nahida Islam
+              </cite>
+            </footer>
           </Col>
         </Row>
         <Subhead subtitle="Skills & competencies" />

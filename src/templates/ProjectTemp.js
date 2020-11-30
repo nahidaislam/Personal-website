@@ -84,34 +84,38 @@ const ProjectTemp = ({ data }) => {
             md={12}
             className="align-items-center project-intro bg-full project-info "
           >
-            <Col md={6} className="pr-5" ref={el => (image = el)}>
-              {data.mdx.frontmatter.thumbnailImage && (
-                <Img
-                  fluid={
-                    data.mdx.frontmatter.thumbnailImage.childImageSharp.fluid
-                  }
-                />
-              )}
+            <Col md={6}>
+              <Col md={12} ref={el => (image = el)}>
+                {data.mdx.frontmatter.thumbnailImage && (
+                  <Img
+                    fluid={
+                      data.mdx.frontmatter.thumbnailImage.childImageSharp.fluid
+                    }
+                  />
+                )}
+              </Col>
             </Col>
-            <Col md={6} className="abstract pl-5" ref={el => (abstract = el)}>
-              <h2 className="py-3">{data.mdx.frontmatter.secondTitle}</h2>
-              <p>{data.mdx.frontmatter.abstract}</p>
+            <Col md={6} className="abstract">
+              <Col md={12} ref={el => (abstract = el)}>
+                <h2 className="py-3">{data.mdx.frontmatter.secondTitle}</h2>
+                <p>{data.mdx.frontmatter.abstract}</p>
 
-              <div className="d-flex justify-content-between py-3">
-                <p>
-                  {" "}
-                  <span className="textColor">Role</span>:{" "}
-                  {data.mdx.frontmatter.role}
-                </p>
-                <p>
-                  <span className="textColor">Type</span> :{" "}
-                  {data.mdx.frontmatter.type}
-                </p>
-                <p>
-                  <span className="textColor">Date</span>:{" "}
-                  {data.mdx.frontmatter.date}
-                </p>
-              </div>
+                <div className="d-flex justify-content-between py-3">
+                  <p>
+                    {" "}
+                    <span className="textColor">Role</span>:{" "}
+                    {data.mdx.frontmatter.role}
+                  </p>
+                  <p>
+                    <span className="textColor">Type</span> :{" "}
+                    {data.mdx.frontmatter.type}
+                  </p>
+                  <p>
+                    <span className="textColor">Date</span>:{" "}
+                    {data.mdx.frontmatter.date}
+                  </p>
+                </div>
+              </Col>
             </Col>
           </Row>
 
