@@ -32,7 +32,8 @@ h2 {
   padding: 2rem 0 2rem 0;
 }
 
-p {
+p,
+li {
   text-align: justify;
   text-justify: inter-word;
 }

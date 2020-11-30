@@ -68,33 +68,58 @@ const Cero = () => {
                 been developed. The organizations/companies have access to the
                 tool after the workshop to continue working with it internally.
               </p>
-            </Col>
-          </Col>
-          <Col md={6}>
-            <Col md={12}>
               <h4>The project goal</h4>
               <p>
                 Many of today’s technologies lack the essence of usability and
-                UX due to the gap between the practice and the literature. This
-                study explores how the usability of an existing tool, namely the
-                CERO simulation tool can be improved through usercentered
-                design.
+                UX due to the gap between the practice and the literature.{" "}
+                <i>
+                  This study explores how the usability of an existing tool,
+                  namely the CERO simulation tool can be improved through
+                  usercentered design.
+                </i>
+              </p>
+              <h4>Delimitations</h4>
+              <p>
+                The master thesis was conducted as the master’s degree project
+                in Interactive media technology at KTH. Therefore, the
+                restrictions in time and resources limited the scope of the
+                project. The master thesis aims to provide a redesign of the web
+                version of the original tool, in the form of a high-fidelity
+                interactive prototype. The results and findings of the thesis
+                work was not evaluated in a real CERO workshop. Thus, does not
+                aspire to be the final design of the tool.
               </p>
             </Col>
           </Col>
-        </Row>
-        <Row md={12}>
           <Col md={6}>
             <Col md={12}>
               <h4>The research process</h4>
-              <li>Specify the context of the use</li>
-              <li>Specify requirements</li>
-              <li>Create a design solution</li>
-              <li>Evaluate the design solution</li>
-            </Col>
-          </Col>
-          <Col md={6}>
-            <Col md={12}>
+
+              <li className="py-1">
+                Specify the context of the use : The project work started with
+                reviewing the interface of the original tool and reading the
+                documentation. I also attended a workshop to attain an insight
+                into the real-life usage of the tool.
+              </li>
+              <li className="py-1">
+                Specify requirements : A pre-study was conducted to gain a
+                deeper understanding of the target audience and gather their
+                opinion about the original tool through a semi-structured
+                interview which included an open-ended questionnaire.
+              </li>
+              <li className="py-1">
+                Create a design solution : A mind- map was created to identify
+                attributes for use in perceptual scales according to the
+                findings of the pre-study. Finally, a clickable high-fidelity
+                prototype was created using an interface design tool called
+                Figma.
+              </li>
+              <li className="py-1">
+                Evaluate the design solution : The evaluation of the prototype
+                consisted of both a "thinkaloud" exercise and a semi-structured
+                interview on five test subjects.
+              </li>
+
               <h4>The prototyping tool</h4>
               <Row className=" m-0 pt-4">
                 <Tool alt="figma" imgsrc={figma.childImageSharp.fixed}>
