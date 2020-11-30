@@ -1,9 +1,9 @@
 .site-footer {
+  display: none;
   background-color: #26272b;
   padding: 20px 0 20px;
   line-height: 24px;
   color: #737373;
-  visibility: hidden;
 }
 
 .site-footer .footer-socials a {
@@ -45,6 +45,6 @@
 }
 @media (max-width: 1180px) {
   .site-footer {
-    visibility: visible !important;
+    display: block;
   }
 }

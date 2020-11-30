@@ -19,10 +19,10 @@ body {
   background: url(../../images/hero.jpg) repeat 50% 50%;
   background-size: cover;
 }
-
-.content-container {
-  margin-bottom: 3rem;
+main {
+  flex: 1 0 auto;
 }
+
 h1,
 h2 {
   font-family: var(--playfair-regular);
@@ -36,6 +36,16 @@ p,
 li {
   text-align: justify;
   text-justify: inter-word;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-container {
+  margin-bottom: 2rem;
 }
 
 .image-item {

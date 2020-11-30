@@ -13,15 +13,13 @@ import Footer from "./Elements/Footer/Footer"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="flexbox">
       <Header />
-      <div>
-        <Socials />
-        <main>{children}</main>
-        <Contact />
-        <Footer />
-      </div>
-    </>
+      <Socials />
+      <main>{children}</main>
+      <Contact />
+      <Footer />
+    </div>
   )
 }
 

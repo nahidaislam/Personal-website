@@ -8,7 +8,6 @@ import { Power3, TimelineLite, TweenMax } from "gsap"
 
 //Images
 import illustration from "../../images/ProfilePicture/illustration.png"
-import ring from "../../images/ring.png"
 
 const Home = () => {
   let home = useRef(null)
@@ -52,9 +51,9 @@ const Home = () => {
 
   return (
     <section className="home" ref={el => (home = el)}>
-      <Container>
-        <Row md={12} className="">
-          <Col md={8} ref={el => (content = el)} className="pt-5">
+      <Container className="intro">
+        <Row md={12}>
+          <Col lg={8} md={12} ref={el => (content = el)} className="pt-5">
             <div className="welcome">
               <h1>Hi, my name is Nahida Islam</h1>
               <h6>Web developer | UX/UI Designer </h6>
@@ -73,7 +72,7 @@ const Home = () => {
               </button>
             </div>
           </Col>
-          <Col md={4} ref={el => (images = el)}>
+          <Col lg={4} ref={el => (images = el)}>
             <div className="loader">
               <div className="illustration ">
                 <img src={illustration} alt="" />

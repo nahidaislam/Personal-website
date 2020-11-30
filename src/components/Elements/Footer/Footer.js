@@ -20,22 +20,22 @@ const Footer = () => {
             <ul className="footer-socials">
               <li>
                 <a href="https://github.com/nahidaislam">
-                  <FaGithub className="social-media-fill" size="22px" />
+                  <FaGithub className="social-media-fill" size="20px" />
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/nahida-islam/">
-                  <FaLinkedinIn className="social-media-fill" size="22px" />
+                  <FaLinkedinIn className="social-media-fill" size="20px" />
                 </a>
               </li>
               <li>
                 <a href="https://www.behance.net/itsnahida ">
-                  <FaBehance className="social-media-fill" size="22px" />
+                  <FaBehance className="social-media-fill" size="20px" />
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/its.nahida/">
-                  <FaInstagram className="social-media-fill" size="22px" />
+                  <FaInstagram className="social-media-fill" size="20px" />
                 </a>
               </li>
               <li>

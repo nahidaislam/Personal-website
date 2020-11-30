@@ -41,16 +41,6 @@ const Cero = () => {
     }
   `)
 
-  // const captions = [
-  //   "The landing page",
-  //   "The Smorgasbord Page",
-  //   "Statistic",
-  //   "The overview of the Action plan",
-  //   "The Gant chart",
-  //   "History of the saved versions",
-  //   "Setting page",
-  // ]
-
   return (
     <div className="cero-template content-container">
       <div className="py-4">
