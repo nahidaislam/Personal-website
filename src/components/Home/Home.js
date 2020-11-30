@@ -52,8 +52,8 @@ const Home = () => {
 
   return (
     <section className="home" ref={el => (home = el)}>
-      <Container className="intro">
-        <Row md={12}>
+      <Container>
+        <Row md={12} className="">
           <Col md={8} ref={el => (content = el)} className="pt-5">
             <div className="welcome">
               <h1>Hi, my name is Nahida Islam</h1>
@@ -81,12 +81,6 @@ const Home = () => {
                   {" "}
                   Illustration by Miryam Sophie Ahlström
                 </p>
-              </div>
-              <div className="ringOne ring">
-                <img src={ring} alt="ring" />
-              </div>
-              <div className="ringTwo ring">
-                <img src={ring} alt="ring" />
               </div>
             </div>
           </Col>

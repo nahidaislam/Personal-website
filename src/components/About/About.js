@@ -45,7 +45,7 @@ const About = () => {
     const thirdPara = secondPara.nextSibling
     const fourthPara = thirdPara.nextSibling
 
-    tl.from(profile, 1, { y: 1280, ease: Power3.easeOut }, "start").from(
+    tl.from(profile, 1, { ease: Power3.easeOut }, "start").from(
       profile.firstElementChild,
       2,
       { scale: 1.6, ease: Power3.easeOut },

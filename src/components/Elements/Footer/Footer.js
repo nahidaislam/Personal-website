@@ -2,41 +2,55 @@
 import "./Footer.css"
 
 import React from "react"
-// import { FaBehance, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
+import { Container, Row } from "react-bootstrap"
+import {
+  FaBehance,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaEnvelope,
+} from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <footer class="footer-area">
-        {/* <div class="container">
-          <div class="site-logo text-center py-4">
-            <a href="#">
-              <img src="./images/logo.png" alt="logo" />
-            </a>
+    <footer className="site-footer">
+      <Container>
+        <Row className="justify-content-center">
+          <div>
+            <ul className="footer-socials">
+              <li>
+                <a href="https://github.com/nahidaislam">
+                  <FaGithub className="social-media-fill" size="22px" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/nahida-islam/">
+                  <FaLinkedinIn className="social-media-fill" size="22px" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/itsnahida ">
+                  <FaBehance className="social-media-fill" size="22px" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/its.nahida/">
+                  <FaInstagram className="social-media-fill" size="22px" />
+                </a>
+              </li>
+              <li>
+                <a href="mailto:nahida_1994@hotmail.com">
+                  <FaEnvelope className="social-media-fill" size="20px" />
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="social text-center">
-            <h5 class="text-uppercase">Follow me</h5>
-            <a href="#">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-          <div class="copyrights text-center">
-            <p class="para">
-              Copyright ©2020 All rights reserved | Nahida Islam
-            </p>
-          </div>
-        </div> */}
-      </footer>
-    </div>
+        </Row>
+        <Row className="justify-content-center pt-2">
+          <p className="copyright-text">Copyright &copy; Nahida Islam 2020</p>
+        </Row>
+      </Container>
+    </footer>
   )
 }
 
