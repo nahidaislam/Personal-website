@@ -11,6 +11,23 @@ import styled from "styled-components"
 import Cards from "./Cards"
 import PageTitle from "../Elements/PageTitle/PageTitle"
 
+//Style the buttons
+const Buttons = styled.button`
+  color: var(--inactive-color);
+  background: transparent;
+  border: none;
+  margin-right: 3rem;
+  text-transform: uppercase;
+  font-size: 18px;
+
+  ${({ active }) =>
+    active &&
+    `
+    color: var(--active-color);
+    
+  `}
+`
+
 const DisplayCard = () => {
   //animation vars
   let projects = useRef(null)
@@ -63,22 +80,6 @@ const DisplayCard = () => {
     }
   }, [isotope, filterKey])
 
-  //Style the buttons
-  const Buttons = styled.button`
-    color: var(--inactive-color);
-    background: transparent;
-    border: none;
-    margin-right: 3rem;
-    text-transform: uppercase;
-    font-size: 18px;
-
-    ${({ active }) =>
-      active &&
-      `
-    color: var(--active-color);
-    
-  `}
-  `
   const types = [
     { name: "All", id: "*" },
     { name: "Design", id: "design" },

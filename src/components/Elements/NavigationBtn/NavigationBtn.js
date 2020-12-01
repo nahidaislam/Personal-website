@@ -8,13 +8,14 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import styled from "styled-components"
 
+//Style the buttons
+const ScrollUpBtn = styled.button`
+  color: var(--text-color);
+  background: transparent;
+  border: none;
+`
+
 const NavigationBtn = ({ leftHref, leftText, rightHref, rightText }) => {
-  //Style the buttons
-  const ScrollUpBtn = styled.button`
-    color: var(--text-color);
-    background: transparent;
-    border: none;
-  `
   return (
     <Row className=" navbtn ">
       <Col>

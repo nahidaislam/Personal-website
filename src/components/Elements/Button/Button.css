@@ -1,5 +1,6 @@
 /* button */
-.primary-button a {
+.primary-button a,
+.primary-button a:hover {
   padding: 0.5rem 1rem;
   color: #f4f4f4;
   text-decoration: none;
