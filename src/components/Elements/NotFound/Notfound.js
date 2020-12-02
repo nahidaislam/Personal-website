@@ -2,7 +2,6 @@
 import "./NotFound.css"
 
 import React, { useEffect, useRef } from "react"
-import { Link } from "gatsby"
 import { Container, Row } from "react-bootstrap"
 import { TimelineLite, TweenMax } from "gsap"
 
@@ -25,11 +24,12 @@ const NotFound = () => {
         <Row className="pt-5">
           <Illustration />
         </Row>
-        <Row className=" m-0 pt-5 justify-content-center">
-          <Button href="/">
-            Homepage
-            {/* <Link to="/">Homepage</Link> */}
-          </Button>
+        <Row className=" notFound-text justify-content-center pt-2">
+          <p>Oops! The page can't be found</p>
+        </Row>
+
+        <Row className=" justify-content-center">
+          <Button href="/">Go Back</Button>
         </Row>
       </Container>
     </section>

@@ -1,6 +1,11 @@
 .notFound-page {
   visibility: hidden;
 }
+.notFound-text p {
+  font: normal 500 18px var(--playfair-regular);
+  letter-spacing: 0.05em;
+  color: var(--inactive-color);
+}
 
 /* Inspired by @SabAsan (Codepen) */
 #handboy {
