@@ -84,14 +84,11 @@ const Home = () => {
           </Col>
           <Col lg={4} ref={el => (images = el)}>
             <div className="illustration ">
-              {/* <img src={illustration} alt="" /> */}
-
               <Img
                 fluid={illustration.childImageSharp.fluid}
                 alt="Illustration"
               />
               <p className="text-center credit">
-                {" "}
                 Illustration by Miryam Sophie Ahlström
               </p>
             </div>

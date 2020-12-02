@@ -43,7 +43,7 @@
 
 @media (max-width: 990px) {
   .illustration img,
-  .gatsby-image-wrapper {
+  .illustration .gatsby-image-wrapper {
     display: none !important;
   }
   .illustration p {
