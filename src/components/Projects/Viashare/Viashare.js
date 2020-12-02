@@ -21,9 +21,10 @@ const Viashare = () => {
     query viaShareImageQuery {
       allFile(
         filter: {
-          ext: { regex: "/(jpg)|/(jpeg)|(png)/" }
           relativeDirectory: { eq: "Projects/Viashare" }
+          extension: { regex: "/(jpg)|/(jpeg)|(png)/" }
         }
+        sort: { fields: relativePath, order: ASC }
       ) {
         edges {
           node {
@@ -97,14 +98,18 @@ const Viashare = () => {
 
       <Subhead subtitle="The Designed function" />
       <div className="carousel">
-        <Carousel>
-          {data.allFile.edges.map(({ node }) => (
-            <Carousel.Item>
+        <Carousel interval={null}>
+          {data.allFile.edges.map(image => (
+            <Carousel.Item key={image.node.id}>
               <Img
-                key={node.id}
-                fluid={node.childImageSharp.fluid}
-                alt={node.base.split(".")[0]}
+                fluid={image.node.childImageSharp.fluid}
+                alt={image.node.base.split("-").join(" ").split(".")[0]}
               />
+              <Carousel.Caption className="carousel-caption">
+                <p className="text-center">
+                  {image.node.base.split("-").join(" ").split(".")[0]}
+                </p>
+              </Carousel.Caption>
             </Carousel.Item>
           ))}
         </Carousel>

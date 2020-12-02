@@ -21,9 +21,10 @@ const Cero = () => {
     query ceroImageQuery {
       allFile(
         filter: {
-          ext: { regex: "/(jpg)|/(jpeg)|(png)/" }
           relativeDirectory: { eq: "Projects/Cero" }
+          extension: { regex: "/(jpg)|/(jpeg)|(png)/" }
         }
+        sort: { fields: relativePath, order: ASC }
       ) {
         edges {
           node {
@@ -123,14 +124,18 @@ const Cero = () => {
 
       <Subhead subtitle="The redesigned tool" />
       <div className="carousel">
-        <Carousel>
-          {data.allFile.edges.map(({ node }) => (
-            <Carousel.Item>
+        <Carousel interval={null}>
+          {data.allFile.edges.map(image => (
+            <Carousel.Item key={image.node.id}>
               <Img
-                key={node.id}
-                fluid={node.childImageSharp.fluid}
-                alt={node.base.split(".")[0]}
+                fluid={image.node.childImageSharp.fluid}
+                alt={image.node.base.split("-").join(" ").split(".")[0]}
               />
+              <Carousel.Caption className="carousel-caption">
+                <p className="text-center">
+                  {image.node.base.split("-").join(" ").split(".")[0]}
+                </p>
+              </Carousel.Caption>
             </Carousel.Item>
           ))}
         </Carousel>
@@ -189,3 +194,28 @@ const Cero = () => {
 }
 
 export default Cero
+
+// export const pageQuery = graphql`
+//   query {
+//     ceroPhotos: allFile(
+//       filter: {
+//         relativeDirectory: { eq: "Projects/Cero" }
+//         extension: { regex: "/(jpg)|/(jpeg)|(png)/" }
+//       }
+//       sort: { fields: relativePath, order: ASC }
+//     ) {
+//       edges {
+//         node {
+//           id
+//           name
+//           base
+//           childImageSharp {
+//             fluid {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

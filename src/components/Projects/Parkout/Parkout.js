@@ -2,7 +2,7 @@
 import "../Projects.css"
 
 import React from "react"
-import { Col, Row } from "react-bootstrap"
+import { Carousel, Col, Row } from "react-bootstrap"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
@@ -28,9 +28,10 @@ const Parkout = () => {
     query parkoutImageQuery {
       allFile(
         filter: {
-          ext: { regex: "/(jpg)|/(jpeg)|(png)/" }
           relativeDirectory: { eq: "Projects/Parkout" }
+          extension: { regex: "/(jpg)|/(jpeg)|(png)/" }
         }
+        sort: { fields: relativePath, order: ASC }
       ) {
         edges {
           node {
@@ -126,14 +127,17 @@ const Parkout = () => {
 
       <Subhead subtitle="The Re-designed app" />
       <Row md={12}>
-        {data.allFile.edges.map(({ node }) => (
-          <Col md={6} className="image-grid">
+        {data.allFile.edges.map(image => (
+          <Col md={6} key={image.node.id}>
             <Img
-              key={node.id}
-              className="image-item"
-              fluid={node.childImageSharp.fluid}
-              alt={node.base.split(".")[0]}
+              fluid={image.node.childImageSharp.fluid}
+              alt={image.node.base.split("-").join(" ").split(".")[0]}
             />
+            <Carousel.Caption className="carousel-caption">
+              <p className="text-center">
+                {image.node.base.split("-").join(" ").split(".")[0]}
+              </p>
+            </Carousel.Caption>
           </Col>
         ))}
       </Row>
