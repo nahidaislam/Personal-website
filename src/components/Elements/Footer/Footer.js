@@ -19,22 +19,25 @@ const Footer = () => {
           <div>
             <ul className="footer-socials">
               <li>
-                <a href="https://github.com/nahidaislam">
+                <a href="https://github.com/nahidaislam " target="blank">
                   <FaGithub className="social-media-fill" size="20px" />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/nahida-islam/">
+                <a
+                  href="https://www.linkedin.com/in/nahida-islam/"
+                  target="blank"
+                >
                   <FaLinkedinIn className="social-media-fill" size="20px" />
                 </a>
               </li>
               <li>
-                <a href="https://www.behance.net/itsnahida ">
+                <a href="https://www.behance.net/itsnahida " target="blank">
                   <FaBehance className="social-media-fill" size="20px" />
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/its.nahida/">
+                <a href="https://www.instagram.com/its.nahida/" target="blank">
                   <FaInstagram className="social-media-fill" size="20px" />
                 </a>
               </li>

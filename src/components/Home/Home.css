@@ -32,10 +32,6 @@
 }
 
 /* image */
-.loader img {
-  max-width: 110%;
-  height: auto;
-}
 
 .illustration {
   filter: saturate(1.2);
@@ -46,10 +42,11 @@
 }
 
 @media (max-width: 990px) {
-  .loader img {
-    display: none;
+  .illustration img,
+  .gatsby-image-wrapper {
+    display: none !important;
   }
-  .loader p {
+  .illustration p {
     display: none;
   }
 }

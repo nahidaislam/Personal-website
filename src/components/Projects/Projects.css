@@ -1,13 +1,8 @@
-.carousel {
+.carousel,
+.demo-video {
   padding: 1rem 0 1rem 0;
 }
 .carousel-caption p {
-  /* display: inline;
-  position: relative;
-  background-color: var(--active-color);
-  box-shadow: 2em 0 0 0 var(--active-color), -2em 0 0 0 var(--active-color);
-  border-radius: 25px;
-  color: var(--background-color); */
   background: url("../../images/yellow-brushstroke.png");
   background-repeat: no-repeat;
   background-size: 100% 95%;
@@ -23,10 +18,6 @@
 .carousel-control-next,
 .carousel-control-prev {
   filter: invert(100%);
-}
-
-.demo-video {
-  padding: 1rem 0 1rem 0;
 }
 
 .members p {

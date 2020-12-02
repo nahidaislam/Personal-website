@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Nahida Islam`,
     description: `A personal website presenting my works.`,
-    author: `@nahida`,
+    image: `${__dirname}/src/images/ProfilePicture/propic.jpg`,
+    author: `Nahida Islam`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

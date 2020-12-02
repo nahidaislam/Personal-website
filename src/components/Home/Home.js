@@ -2,14 +2,18 @@
 import "./Home.css"
 
 import React, { useEffect, useRef } from "react"
-import { Col, Container, Row } from "react-bootstrap"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
+import { Col, Container, Row } from "react-bootstrap"
 import { Power3, TimelineLite, TweenMax } from "gsap"
 
-//Images
-import illustration from "../../images/ProfilePicture/illustration.png"
+//Image Query
+import Images from "../image"
+// import illustration from "../../images/ProfilePicture/illustration.png"
 
 const Home = () => {
+  const { illustration } = Images()
+
   let home = useRef(null)
   let content = useRef(null)
   let images = useRef(null)
@@ -17,7 +21,7 @@ const Home = () => {
 
   useEffect(() => {
     //images vars
-    const illImage = images.children[0].firstElementChild
+    const illImage = images.firstElementChild
 
     //content vars
     const headline = content.children[0].children[0]
@@ -53,7 +57,13 @@ const Home = () => {
     <section className="home" ref={el => (home = el)}>
       <Container className="intro">
         <Row md={12}>
-          <Col lg={8} md={12} ref={el => (content = el)} className="pt-5">
+          <Col
+            lg={8}
+            md={12}
+            sm={12}
+            ref={el => (content = el)}
+            className="pt-5"
+          >
             <div className="welcome">
               <h1>Hi, my name is Nahida Islam</h1>
               <h6>Web developer | UX/UI Designer </h6>
@@ -73,14 +83,17 @@ const Home = () => {
             </div>
           </Col>
           <Col lg={4} ref={el => (images = el)}>
-            <div className="loader">
-              <div className="illustration ">
-                <img src={illustration} alt="" />
-                <p className="text-center credit">
-                  {" "}
-                  Illustration by Miryam Sophie Ahlström
-                </p>
-              </div>
+            <div className="illustration ">
+              {/* <img src={illustration} alt="" /> */}
+
+              <Img
+                fluid={illustration.childImageSharp.fluid}
+                alt="Illustration"
+              />
+              <p className="text-center credit">
+                {" "}
+                Illustration by Miryam Sophie Ahlström
+              </p>
             </div>
           </Col>
         </Row>

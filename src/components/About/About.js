@@ -15,6 +15,7 @@ import PageTitle from "../Elements/PageTitle/PageTitle"
 import Subhead from "../Elements/Subhead/Subhead"
 import Tool from "../Elements/Tool/Tool"
 import Button from "../Elements/Button/Button"
+import CV from "./Nahida-Islam-CV.pdf"
 
 const About = () => {
   const { propic } = Images()
@@ -89,7 +90,7 @@ const About = () => {
               </span>
             </h2>
             <p>
-              My name is Nahida Islam. A highly motivated IT professional with
+              I am Nahida Islam. A highly motivated IT professional with
               experience working on several programming projects and
               applications, during a 5-year IT education with a master's degree
               in Interactive Media Technology at the Royal Institute of
@@ -102,16 +103,15 @@ const About = () => {
             <p>
               I possess a wide range of skills related to media technology,
               human-computer interaction and user experience (UX). During my
-              time at KTH, I have had worked with several different projects,
-              for instance, research-oriented projects, web development, and
-              software development projects.
+              time at KTH, I have had worked with several different project
+              areas, for instance, research-oriented projects, web development,
+              and software development projects.
             </p>
             <p>
               Thank you for visiting my portfolio, feel free to check out my
               work and do not hesitate to contact me if you want to collaborate
               or ask a question.
             </p>
-            {/* <p className="signature"> Nahida Islam</p> */}
             <footer className="blockquote-footer float-right">
               <cite className="signature" title="Nahida Islam">
                 Nahida Islam
@@ -178,9 +178,7 @@ const About = () => {
           </Col>
         </Row>
         <Row className=" m-0 pt-5 justify-content-center">
-          <Button href="https://gits-15.sys.kth.se/camillef/DH2642-save-me">
-            Resumé
-          </Button>
+          <Button href={CV}>Resumé</Button>
         </Row>
       </Container>
     </section>

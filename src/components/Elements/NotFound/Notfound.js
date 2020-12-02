@@ -3,7 +3,7 @@ import "./NotFound.css"
 
 import React, { useEffect, useRef } from "react"
 import { Container, Row } from "react-bootstrap"
-import { TimelineLite, TweenMax } from "gsap"
+import { Power3, TimelineLite, TweenMax } from "gsap"
 
 //Component
 import Illustration from "./404Illustration"
@@ -14,6 +14,17 @@ const NotFound = () => {
   let tl = new TimelineLite({ delay: 0.3 })
 
   useEffect(() => {
+    tl.staggerFrom(
+      [notFoundPage],
+      1,
+      {
+        delay: 0.5,
+        opacity: 0,
+        y: 20,
+        ease: Power3.easeInOut,
+      },
+      0.15
+    )
     //Remove initial flash
     TweenMax.to(notFoundPage, 0, { css: { visibility: "visible" } })
   }, [tl])
