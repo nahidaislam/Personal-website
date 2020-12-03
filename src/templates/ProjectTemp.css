@@ -35,6 +35,6 @@
   color: var(--text-color);
 }
 
-.textColor {
+.abstract span {
   color: var(--active-color);
 }

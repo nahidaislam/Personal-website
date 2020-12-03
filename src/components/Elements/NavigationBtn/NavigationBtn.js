@@ -22,7 +22,7 @@ const NavigationBtn = ({ leftHref, leftText, rightHref, rightText }) => {
         <div className="float-left">
           <Link to={leftHref}>
             <FaArrowLeft className="mr-3" />
-            {leftText}
+            <span>{leftText}</span>
           </Link>
         </div>
       </Col>
@@ -34,7 +34,7 @@ const NavigationBtn = ({ leftHref, leftText, rightHref, rightText }) => {
       <Col>
         <div className="float-right">
           <Link to={rightHref}>
-            {rightText}
+            <span> {rightText}</span>
             <FaArrowRight className="ml-3" />
           </Link>
         </div>

@@ -1,13 +1,8 @@
 .home {
   visibility: hidden;
-  width: 100%;
-  height: auto;
 }
-.intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.home .container {
+  min-height: 80vh;
 }
 
 .welcome h1 {
@@ -21,7 +16,7 @@
   padding-bottom: 1rem;
 }
 .description {
-  max-width: 80%;
+  max-width: 90%;
   padding-bottom: 1rem;
 }
 
@@ -48,5 +43,11 @@
   }
   .illustration p {
     display: none;
+  }
+  .intro-description > * {
+    justify-content: center;
+  }
+  .home .welcome {
+    padding-top: -3rem !important;
   }
 }

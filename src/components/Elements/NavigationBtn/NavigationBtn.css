@@ -2,7 +2,7 @@
   padding-top: 4rem;
 }
 
-.navbtn a,
+.navbtn span,
 .scrollupBtn button {
   font-family: var(--rokkitt-regular);
   letter-spacing: 2px;
@@ -24,8 +24,10 @@
 }
 
 @media (max-width: 990px) {
-  .scrollupBtn button,
-  .navbtn a {
+  .scrollupBtn button {
     font-size: 14px;
+  }
+  .navbtn span {
+    display: none;
   }
 }

@@ -2,7 +2,7 @@
 import "./Card.css"
 
 import React, { useEffect, useRef, useState } from "react"
-import { Container } from "react-bootstrap"
+import { Container, Row } from "react-bootstrap"
 import { Power3, TweenMax } from "gsap"
 import Isotope from "isotope-layout"
 import styled from "styled-components"
@@ -88,7 +88,7 @@ const DisplayCard = () => {
   const [active, setActive] = useState(types[0].name)
   const ButtonGroup = () => {
     return (
-      <div>
+      <Row className="justify-content-center">
         {types.map(type => (
           <Buttons
             key={type.name}
@@ -102,7 +102,7 @@ const DisplayCard = () => {
             {type.name}
           </Buttons>
         ))}
-      </div>
+      </Row>
     )
   }
 

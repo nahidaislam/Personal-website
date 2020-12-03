@@ -100,21 +100,18 @@ const ProjectTemp = ({ data }) => {
                 <h2 className="py-3">{data.mdx.frontmatter.secondTitle}</h2>
                 <p>{data.mdx.frontmatter.abstract}</p>
 
-                <div className="d-flex justify-content-between py-3">
+                <Row className="d-flex justify-content-between px-3">
                   <p>
                     {" "}
-                    <span className="textColor">Role</span>:{" "}
-                    {data.mdx.frontmatter.role}
+                    <span>Role</span>: {data.mdx.frontmatter.role}
                   </p>
                   <p>
-                    <span className="textColor">Type</span> :{" "}
-                    {data.mdx.frontmatter.type}
+                    <span>Type</span> : {data.mdx.frontmatter.type}
                   </p>
                   <p>
-                    <span className="textColor">Date</span>:{" "}
-                    {data.mdx.frontmatter.date}
+                    <span>Date</span>: {data.mdx.frontmatter.date}
                   </p>
-                </div>
+                </Row>
               </Col>
             </Col>
           </Row>

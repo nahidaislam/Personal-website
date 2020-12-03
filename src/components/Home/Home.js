@@ -55,16 +55,10 @@ const Home = () => {
 
   return (
     <section className="home" ref={el => (home = el)}>
-      <Container className="intro">
+      <Container className="d-flex align-items-center juntify-content-center">
         <Row md={12}>
-          <Col
-            lg={8}
-            md={12}
-            sm={12}
-            ref={el => (content = el)}
-            className="pt-5"
-          >
-            <div className="welcome">
+          <Col lg={8} md={12} sm={12} ref={el => (content = el)}>
+            <div className="welcome pt-lg-5">
               <h1>Hi, my name is Nahida Islam</h1>
               <h6>Web developer | UX/UI Designer </h6>
               <div className="description">
