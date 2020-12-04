@@ -43,7 +43,7 @@
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-@media (max-width: 1180px) {
+@media screen and (max-width: 1180px) {
   .site-footer {
     display: block;
   }

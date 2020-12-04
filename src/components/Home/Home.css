@@ -36,7 +36,7 @@
   color: var(--inactive-color);
 }
 
-@media (max-width: 990px) {
+@media screen and (max-width: 990px) {
   .illustration img,
   .illustration .gatsby-image-wrapper {
     display: none !important;
