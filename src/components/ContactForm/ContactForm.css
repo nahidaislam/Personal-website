@@ -1,12 +1,20 @@
 .contact-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 3rem;
+  /* margin: 0 7rem; */
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.input-list li {
+  list-style: none;
 }
 
 label {
   font-family: var(--hind-regular);
+  color: var(--title-color);
 }
 
 input[type="text"],
@@ -15,10 +23,11 @@ textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid rgba(158, 159, 252, 0.3);
+
   border-radius: 0.25rem;
   margin-top: 6px;
   margin-bottom: 1rem;
-  background: none;
+  background: transparent;
   outline: none;
   -webkit-appearance: none;
 }
@@ -42,16 +51,18 @@ textarea:focus {
 .send-button .button:hover {
   box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
 }
-
-/* input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border: 1px solid rgba(158, 159, 252, 0.6);
+  -webkit-text-fill-color: var(--title-color);
+  -webkit-box-shadow: 0 0 0px 1000px #121212 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
-input[type="submit"]:hover {
-  background-color: #45a049;
-} */
+@media screen and (max-width: 990px) {
+  .contact-form {
+    margin: 0 3rem;
+  }
+}

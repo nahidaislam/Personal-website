@@ -1,8 +1,10 @@
 .sub-bg {
   position: relative;
+  border-bottom: 1px solid var(--inactive-color);
+  padding-bottom: 3px;
 }
 
-.sub-bg:before {
+/* .sub-bg:before {
   content: "";
   position: absolute;
   top: 0;
@@ -10,5 +12,5 @@
   transform: translateX(-50%);
   height: 100%;
   width: 100vw;
-  /* background: rgba(158, 159, 252, 0.09); */
-}
+  background: rgba(158, 159, 252, 0.09);
+} */
