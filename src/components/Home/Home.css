@@ -25,6 +25,40 @@
   text-align: justify;
   text-justify: inter-word;
 }
+.description p a {
+  text-decoration: none;
+  color: var(--active-color);
+}
+
+.primary-button a,
+.primary-button a:hover,
+.secondary-button a,
+.secondary-button a:hover {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.primary-button .button,
+.secondary-button .button {
+  border: 1px solid rgb(146, 148, 248);
+  position: relative;
+  overflow: hidden;
+  width: 10rem;
+}
+
+.secondary-button a,
+.secondary-button a:hover {
+  color: rgba(146, 148, 248, 0.8);
+}
+
+.secondary-button .button {
+  border: 2px solid rgba(146, 148, 248, 0.1);
+}
+
+.primary-button .button:hover,
+.secondary-button .button:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
 
 /* image */
 

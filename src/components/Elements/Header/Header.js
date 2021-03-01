@@ -50,6 +50,15 @@ export default class Header extends Component {
                     Hobbies
                   </Link>
                 </Nav.Item>
+                <Nav.Item as="li">
+                  <Link
+                    to="/contact"
+                    className="nav-link"
+                    activeClassName="active"
+                  >
+                    Contact
+                  </Link>
+                </Nav.Item>
               </Nav>
             </Navbar.Collapse>
           </Navbar>

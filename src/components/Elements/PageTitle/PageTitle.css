@@ -5,6 +5,7 @@
 .pageTitle h1 {
   font: normal 500 42px;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 @media screen and (max-width: 990px) {

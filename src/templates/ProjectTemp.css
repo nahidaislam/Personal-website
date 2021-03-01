@@ -23,12 +23,13 @@
   color: var(--title-color);
 }
 .abstract h2 {
-  font-family: var(--rokkitt-regular);
+  font-family: var(--playfair-regular);
 }
 
 .content h4 {
-  font-family: var(--rokkitt-regular);
+  font-family: var(--playfair-regular);
   color: var(--active-color);
+  font-size: 20px;
 }
 
 .content p {

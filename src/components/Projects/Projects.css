@@ -22,7 +22,8 @@
 
 .members p {
   color: var(--text-color);
-  font-family: var(--rokkitt-regular);
+  font-family: var(--hind-regular);
+  font-size: 14px;
 }
 
 .tools a {

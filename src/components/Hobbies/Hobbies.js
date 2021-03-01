@@ -76,7 +76,13 @@ const Hobbies = () => {
             that's when I first fell in love with fashion and makeup. A few
             years ago, I was battling depression. During that time, I resumed my
             makeup journey, and opened an{" "}
-            <a href="https://www.instagram.com/its.nahida/">Instagram</a>{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/its.nahida/"
+            >
+              Instagram
+            </a>{" "}
             account. Today, this is one of my favorite hobbies.
           </p>
           <p>

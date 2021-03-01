@@ -9,7 +9,6 @@ import { Power3, TimelineLite, TweenMax } from "gsap"
 
 //Image Query
 import Images from "../image"
-// import illustration from "../../images/ProfilePicture/illustration.png"
 
 const Home = () => {
   const { illustration } = Images()
@@ -27,7 +26,7 @@ const Home = () => {
     const headline = content.children[0].children[0]
     const subtext = headline.nextSibling
     const contentP = subtext.nextSibling.children[0]
-    const viewButton = content.children[1].children[0]
+    const viewButton = content.children[1]
 
     tl.from(illImage, 1, { y: 900, ease: Power3.easeOut }, "start").from(
       illImage.firstElementChild,
@@ -59,21 +58,37 @@ const Home = () => {
         <Row md={12}>
           <Col lg={8} md={12} sm={12} ref={el => (content = el)}>
             <div className="welcome pt-lg-5">
-              <h1>Hi, my name is Nahida Islam</h1>
-              <h6>Web developer | UX/UI Designer </h6>
+              {/* <h1>Hi, my name is Nahida Islam</h1> */}
+              <h1>A creative coder from Stockholm</h1>
+              <h6>Frontend developer | UX/UI Designer </h6>
               <div className="description">
                 <p>
-                  I am a Stockholm based creative coder. I am interested in
-                  creating user-friendly products using User Research, tests and
-                  wireframes and also giving them life through coding. I am now
-                  up for the start of my career and new challenges.
+                  Hi, my name is Nahida Islam. I am a Stockholm-based creative
+                  coder. I am interested in creating user-friendly products
+                  using user research, tests, and wireframes and also giving
+                  them life through coding. Currently, I am working at{" "}
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.acast.com/en"
+                  >
+                    Acast
+                  </a>{" "}
+                  as a Software engineer, geared towards frontend development.
                 </p>
               </div>
             </div>
-            <div className="primary-button">
-              <button type="button" className="btn button mr-4">
-                <Link to="/projects"> View Projects</Link>
-              </button>
+            <div className="btn-group">
+              <div className="primary-button">
+                <button type="button" className="btn button mr-4">
+                  <Link to="/projects"> View projects</Link>
+                </button>
+              </div>
+              <div className="secondary-button">
+                <button type="button" className="btn button mr-4">
+                  <Link to="/contact"> Get in touch</Link>
+                </button>
+              </div>
             </div>
           </Col>
           <Col lg={4} ref={el => (images = el)}>
