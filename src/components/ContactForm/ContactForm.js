@@ -5,11 +5,11 @@ import PageTitle from "../Elements/PageTitle/PageTitle"
 import "./ContactForm.css"
 
 const ContactForm = () => {
-  // const [formState, setFormState] = useState({
-  //   name: "",
-  //   email: "",
-  //   message: "",
-  // })
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
 
   // const encode = data => {
   //   return Object.keys(data)
@@ -17,14 +17,14 @@ const ContactForm = () => {
   //     .join("&")
   // }
 
-  // const handleChange = e => {
-  //   setFormState({
-  //     ...formState,
-  //     [e.target.name]: e.target.value,
-  //     [e.target.email]: e.target.value,
-  //     [e.target.message]: e.target.value,
-  //   })
-  // }
+  const handleChange = e => {
+    setFormState({
+      ...formState,
+      [e.target.name]: e.target.value,
+      [e.target.email]: e.target.value,
+      [e.target.message]: e.target.value,
+    })
+  }
   // const handleSubmit = e => {
   //   fetch("/", {
   //     method: "POST",
@@ -57,8 +57,8 @@ const ContactForm = () => {
                   id="fname"
                   type="text"
                   name="name"
-                  // onChange={handleChange}
-                  // value={formState.name}
+                  onChange={handleChange}
+                  value={formState.name}
                 />
               </li>
               <li>
@@ -67,8 +67,8 @@ const ContactForm = () => {
                   id="email"
                   type="email"
                   name="email"
-                  // onChange={handleChange}
-                  // value={formState.email}
+                  onChange={handleChange}
+                  value={formState.email}
                 />
               </li>
               <li>
@@ -76,17 +76,16 @@ const ContactForm = () => {
                 <textarea
                   id="message"
                   name="message"
-                  // onChange={handleChange}
-                  // value={formState.message}
+                  onChange={handleChange}
+                  value={formState.message}
                 ></textarea>
               </li>
-              <li>
-                <div className="send-button">
-                  <button type="submit" className="btn button ">
-                    Send message
-                  </button>
-                </div>
-              </li>
+
+              <div className="send-button">
+                <button type="submit" className="btn button ">
+                  Send message
+                </button>
+              </div>
             </ul>
           </form>
         </div>
