@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="Contact" />
     <ContactForm />
   </Layout>
 )

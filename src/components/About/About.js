@@ -105,7 +105,15 @@ const About = () => {
               human-computer interaction and user experience (UX). During my
               time at KTH, I have had worked with several different project
               areas, for instance, research-oriented projects, web development,
-              and software development projects.
+              and software development projects. Currently, I am working at{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.acast.com/en"
+              >
+                Acast
+              </a>{" "}
+              as a Software engineer, geared towards frontend development.
             </p>
             <p>
               Thank you for visiting my portfolio, feel free to check out my

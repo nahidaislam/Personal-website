@@ -1,21 +1,41 @@
-import React, { useState } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { Container } from "react-bootstrap"
 import PageTitle from "../Elements/PageTitle/PageTitle"
+import { Power3, TweenMax } from "gsap"
 
 import "./ContactForm.css"
 
 const ContactForm = () => {
+  let contact = useRef(null)
+  let title = useRef(null)
+  let content = useRef(null)
+
   const [formState, setFormState] = useState({
     name: "",
     email: "",
     message: "",
   })
 
-  // const encode = data => {
-  //   return Object.keys(data)
-  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-  //     .join("&")
-  // }
+  //The animation
+  useEffect(() => {
+    const pageTitle = title.children[0].children[0].children[0]
+    const form = content
+
+    //Remove initial flash
+    TweenMax.to(contact, 0, { css: { visibility: "visible" } })
+
+    TweenMax.staggerFrom(
+      [pageTitle, form],
+      1,
+      {
+        delay: 0.5,
+        opacity: 0,
+        y: 20,
+        ease: Power3.easeInOut,
+      },
+      0.15
+    )
+  }, [])
 
   const handleChange = e => {
     setFormState({
@@ -25,23 +45,12 @@ const ContactForm = () => {
       [e.target.message]: e.target.value,
     })
   }
-  // const handleSubmit = e => {
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({ "form-name": "contact", ...formState }),
-  //   })
-  //     .then(() => alert("Success!"))
-  //     .catch(error => alert(error))
-
-  //   e.preventDefault()
-  // }
 
   return (
-    <section className="contactForm-page">
-      <Container className="content-container">
+    <section className="contactForm-page" ref={el => (contact = el)}>
+      <Container className="content-container" ref={el => (title = el)}>
         <PageTitle title="Get in touch" />
-        <div className="contact-form ">
+        <div className="contact-form " ref={el => (content = el)}>
           <form
             onSubmit="submit"
             name="contact"

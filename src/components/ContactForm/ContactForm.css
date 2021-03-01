@@ -1,5 +1,8 @@
+.contactForm-page {
+  visibility: hidden;
+}
 .contact-form {
-  padding-top: 3rem;
+  padding-top: 2rem;
   /* margin: 0 7rem; */
 }
 
@@ -40,7 +43,12 @@ textarea:focus {
   border-bottom: 3px solid rgba(158, 159, 252, 1);
 }
 
-.send-button .button {
+.send-button {
+  margin-top: 1rem;
+}
+
+.send-button .button,
+.send-button:hover .button:hover {
   color: #f4f4f4;
   border: 1px solid rgb(146, 148, 248);
   position: relative;
@@ -50,6 +58,7 @@ textarea:focus {
 
 .send-button .button:hover {
   box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  color: #f4f4f4;
 }
 /* Change autocomplete styles in WebKit */
 input:-webkit-autofill,
