@@ -40,24 +40,28 @@
 
 .primary-button .button,
 .secondary-button .button {
-  border: 1px solid rgb(146, 148, 248);
   position: relative;
   overflow: hidden;
   width: 10rem;
 }
+.primary-button .button {
+  border: 1px solid var(--active-color);
+}
 
 .secondary-button a,
 .secondary-button a:hover {
-  color: rgba(146, 148, 248, 0.8);
+  color: var(--green-color);
 }
 
 .secondary-button .button {
-  border: 2px solid rgba(146, 148, 248, 0.1);
+  border: 2px solid rgba(106, 124, 60, 0.1);
 }
 
-.primary-button .button:hover,
-.secondary-button .button:hover {
+.primary-button .button:hover {
   box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+.secondary-button .button:hover {
+  box-shadow: 1px 1px 25px 10px rgba(106, 124, 60, 0.4);
 }
 
 /* image */

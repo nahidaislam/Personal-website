@@ -5,20 +5,19 @@
   color: var(--text-color);
 }
 
-html,
-body {
+html {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
   height: 100%;
   width: 100%;
   position: absolute;
-
-  background: var(--background-color);
 }
 body {
-  background: url(../../images/hero.jpg) repeat 50% 50%;
-  background-size: cover;
+  /* background: url(../../images/hero.jpg) repeat 50% 50%;
+  background-size: cover; */
+
+  background: var(--background-color) !important;
 }
 main {
   flex: 1 0 auto;
@@ -60,11 +59,12 @@ li {
 
 /* CSS variables */
 :root {
-  --background-color: #121212;
+  --background-color: #161616;
   --title-color: #f4f4f4;
   --active-color: #9e9ffc;
   --inactive-color: #808080;
   --text-color: #b3b3b3;
+  --green-color: #6a7c3c;
 
   /* font family variables. */
   --playfair-regular: "playfair-regular";

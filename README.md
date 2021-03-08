@@ -1,15 +1,17 @@
-## Personal website
+# Personal website
 
-1.  **Framework and technologies used**
+## Framework and technologies used
 
-Gatsby, React bootstrap, Gsap(animation), Netlify(hosting)
+Gatsby, React bootstrap, Gsap (animation), Netlify (hosting)
 
-1.  **Personal website sections**
-    ⋅⋅* Home
-    ⋅⋅* Projects
-    ⋅⋅* About
-    ⋅⋅* Hobbies
-    ⋅⋅\* Contact
+## Personal website sections
 
-1.  **Website**
-    (https://nahidaislam.netlify.app/)
+    * Home
+    * Projects
+    * About
+    * Hobbies
+    * Contact
+
+## The website
+
+    https://nahidaislam.netlify.app/
