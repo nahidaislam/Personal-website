@@ -14,10 +14,10 @@ html {
   position: absolute;
 }
 body {
-  /* background: url(../../images/hero.jpg) repeat 50% 50%;
-  background-size: cover; */
+  background: url(../../images/hero.jpg) repeat 50% 50%;
+  background-size: cover;
 
-  background: var(--background-color) !important;
+  /* background: var(--background-color) !important; */
 }
 main {
   flex: 1 0 auto;
